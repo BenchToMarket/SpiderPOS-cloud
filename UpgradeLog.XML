@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="term_Tahsc">
+</Property><Property Name="Solution File" Value="C:\DataFiles\Visual Studio 2008\term_Tahsc\term_Tahsc.sln">
+</Property><Property Name="Date" Value="Saturday, April 05, 2008">
+</Property><Property Name="Time" Value="20:42 PM">
+</Property></Properties><Event ErrorLevel="0" Project="SpiderPOS" Source="SpiderPOS.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SpiderPOS" Source="SpiderPOS.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DataSet_Builder" Source="..\DataSet_Builder\DataSet_Builder.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DataSet_Builder" Source="..\DataSet_Builder\DataSet_Builder.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="term_Tahsc.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="term_Tahsc.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SpiderPOS" Source="SpiderPOS.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DataSet_Builder" Source="..\DataSet_Builder\DataSet_Builder.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

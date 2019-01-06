@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.5" name="Spider POS.exe" publicKeyToken="c28d2885a050c335" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Spider POS" version="1.0.3077.41295" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Spider POS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DataSet_Builder.dll" size="1652224">
+      <assemblyIdentity name="DataSet_Builder" version="1.0.3074.19653" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Q+tncE6BbOvInACdryqmkD1PHqU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.DSICLIENTXLib.dll" size="7680">
+      <assemblyIdentity name="Interop.DSICLIENTXLib" version="3.0.0.0" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>J0n03dbkt76WGQ+shapKejBqJ0U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spider POS.exe" size="1654272">
+      <assemblyIdentity name="Spider POS" version="1.0.3077.41295" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Ew17rW1E9QWkwX8QVCW6Fi+oM4k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Spider POS.exe.config" size="1152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CHOZY43Jl+oK6RinVydlay/OM1o=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=EGLOBALMAIN\Eric" issuerKeyHash="92553635aef784f4ca80ef043e455e8c1d80f8a9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>gwb5/bUCMM8TvMyminZBy9IaBOs=</DigestValue></Reference></SignedInfo><SignatureValue>EwXMpaYA8m/1SrUI/1SybnmOE3Q82sbdFZ2XR2CZImHGl6pfNl388+FsOMDt7Fjvx/KOYHCr2N2W9IsHVtGDxaQqlrrQOdZcgeeynoDak7HY05tDjEHP0i85q2/VY6D9pMfzk1Hae1eIGTmsSwxQig6iiBRbHI/7Doih/IM2TWw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>q+44C6KAlW3ykerVZBkavnOVYhju2dXE1/Cv+LundamHyrE9jxhfzB/Bsq4zxn3YNvckGBtVws53MG0jcTPqUUuEW1pw6+lQzWVsR1kHdtGEuZ0wFGa9dIiJM5dtQkJzOIyDvs29HjSfV9K0IupLwnI4zWr1j47+eNEESF2wm1U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="eb041ad2cb41768aa6ccbc13cf3002b5fdf90683" Description="" Url=""><as:assemblyIdentity version="1.0.0.5" name="Spider POS.exe" publicKeyToken="c28d2885a050c335" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=EGLOBALMAIN\Eric</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>h0iMev5pUmxc20JPDYTY8YuUFqU=</DigestValue></Reference></SignedInfo><SignatureValue>Y/cQloNxkxE0nkQf1JT7Xpjqz664yr4If7Sf4el5nzU/BwQbNJ5djeMBtpoIIlW0kBqYxlgXp2Z9XwzondzAzUO6qDiFlX5BhkZs2nH3FgrhWw++mrsOZ9zclHXy7kKtNHIBP8LN+3pYZ9GOhhLAxCirtHah96mEtSxfAaqh3BA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>q+44C6KAlW3ykerVZBkavnOVYhju2dXE1/Cv+LundamHyrE9jxhfzB/Bsq4zxn3YNvckGBtVws53MG0jcTPqUUuEW1pw6+lQzWVsR1kHdtGEuZ0wFGa9dIiJM5dtQkJzOIyDvs29HjSfV9K0IupLwnI4zWr1j47+eNEESF2wm1U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCAT6gAwIBAgIQAZaP7NtyeLVPoru/pZ1lPDAJBgUrDgMCHQUAMCsxKTAnBgNVBAMeIABFAEcATABPAEIAQQBMAE0AQQBJAE4AXABFAHIAaQBjMB4XDTA4MDQwODEzNTYwMVoXDTA5MDQwODE5NTYwMVowKzEpMCcGA1UEAx4gAEUARwBMAE8AQgBBAEwATQBBAEkATgBcAEUAcgBpAGMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKvuOAuigJVt8pHq1WQZGr5zlWIY7tnVxNfwr/i7p3Wph8qxPY8YX8wfwbKuM8Z92Db3JBgbVcLOdzBtI3Ez6lFLhFtacOvpUM1lbEdZB3bRhLmdMBRmvXSIiTOXbUJCcziMg77NvR40n1fStCLqS8JyOM1q9Y+O/njRBEhdsJtVAgMBAAEwCQYFKw4DAh0FAAOBgQApzCPldvwH5v2kj0hSpFg7/FqhcZnziUjX+q+j+IPvbwCGg42KnyV8ZASILbw+3L12rh2TRmAZ4Wn8127DpSOOsuxMImzJzDRPROE8ManZR96mHoG4gx64rAOIf4BkYoUjneg68mRgpZ7jwWGKWOjqrnKDbetUXzxFR1oKw/jRoA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

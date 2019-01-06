@@ -1,0 +1,354 @@
+<?xml version="1.0" standalone="yes"?>
+<StarterMenu>
+  <xs:schema id="StarterMenu" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="StarterMenu" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="StarterAllFoodCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionID" type="xs:int" minOccurs="0" />
+                <xs:element name="ButtonColor" type="xs:int" minOccurs="0" />
+                <xs:element name="ButtonForeColor" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionGroupID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionFlag" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxID" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StarterModifierCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryAbrev" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryOrder" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionGroupID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionFlag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StarterLocationOverview">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationName" type="xs:string" minOccurs="0" />
+                <xs:element name="Username" type="xs:string" minOccurs="0" />
+                <xs:element name="Password" type="xs:string" minOccurs="0" />
+                <xs:element name="BackPass" type="xs:string" minOccurs="0" />
+                <xs:element name="Domain_Report" type="xs:string" minOccurs="0" />
+                <xs:element name="Hostname_Report" type="xs:string" minOccurs="0" />
+                <xs:element name="Address1" type="xs:string" minOccurs="0" />
+                <xs:element name="Address2" type="xs:string" minOccurs="0" />
+                <xs:element name="City" type="xs:string" minOccurs="0" />
+                <xs:element name="State" type="xs:string" minOccurs="0" />
+                <xs:element name="Zip" type="xs:string" minOccurs="0" />
+                <xs:element name="PhoneNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="UsingDefaults" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AutoPrint" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EndOfWeek" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="EndOfNightDecimal" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OvertimeHours" type="xs:short" minOccurs="0" />
+                <xs:element name="OvertimeRate" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OnlyOneLocation" type="xs:boolean" minOccurs="0" />
+                <xs:element name="MerchantID" type="xs:string" minOccurs="0" />
+                <xs:element name="MerchantIDPhone" type="xs:string" minOccurs="0" />
+                <xs:element name="OperatorID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocalHostName" type="xs:string" minOccurs="0" />
+                <xs:element name="dbName" type="xs:string" minOccurs="0" />
+                <xs:element name="NumberTerminals" type="xs:short" minOccurs="0" />
+                <xs:element name="NumberFloorPlans" type="xs:short" minOccurs="0" />
+                <xs:element name="TimeoutSeconds" type="xs:short" minOccurs="0" />
+                <xs:element name="ColorAdjust" type="xs:short" minOccurs="0" />
+                <xs:element name="VersionNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="LastUpdate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AutoUpdate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UsingBartenderMethod" type="xs:boolean" minOccurs="0" />
+                <xs:element name="BarDoNotPrintDrinks" type="xs:boolean" minOccurs="0" />
+                <xs:element name="CalculateAvgByEntrees" type="xs:boolean" minOccurs="0" />
+                <xs:element name="IsKitchenExpiditer" type="xs:boolean" minOccurs="0" />
+                <xs:element name="IsDelivery" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AutoCloseCheck" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AutoReleaseExperience" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ServesMixedDrinks" type="xs:boolean" minOccurs="0" />
+                <xs:element name="DeliveryCharge" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ToGoCharge" type="xs:decimal" minOccurs="0" />
+                <xs:element name="AutoGratuity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="AutoGratuityNumber" type="xs:short" minOccurs="0" />
+                <xs:element name="SalesTax" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ReceiptMessage1" type="xs:string" minOccurs="0" />
+                <xs:element name="ReceiptMessage2" type="xs:string" minOccurs="0" />
+                <xs:element name="ReceiptMessage3" type="xs:string" minOccurs="0" />
+                <xs:element name="CCMessage1" type="xs:string" minOccurs="0" />
+                <xs:element name="CCMessage2" type="xs:string" minOccurs="0" />
+                <xs:element name="DigitsInTicketNumber" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenChar1" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenChar2" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenChar3" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenChar4" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenSmallInt1" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenSmallInt2" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenSmallInt3" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenSmallInt4" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenSmallInt5" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenInt1" type="xs:int" minOccurs="0" />
+                <xs:element name="OpenInt2" type="xs:int" minOccurs="0" />
+                <xs:element name="OpenBoolean1" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean2" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean3" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean4" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean5" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean6" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean7" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean8" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean9" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBoolean10" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>6</CategoryID>
+    <FunctionID>2</FunctionID>
+    <ButtonColor>-10185235</ButtonColor>
+    <ButtonForeColor>-16777216</ButtonForeColor>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>5</CategoryID>
+    <FunctionID>1</FunctionID>
+    <ButtonColor>-12885875</ButtonColor>
+    <ButtonForeColor>-1</ButtonForeColor>
+    <FunctionGroupID>1</FunctionGroupID>
+    <FunctionFlag>F</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>3</CategoryID>
+    <FunctionID>1</FunctionID>
+    <ButtonColor>-10185235</ButtonColor>
+    <ButtonForeColor>-16777216</ButtonForeColor>
+    <FunctionGroupID>1</FunctionGroupID>
+    <FunctionFlag>F</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>7</CategoryID>
+    <FunctionID>2</FunctionID>
+    <ButtonColor>-3318692</ButtonColor>
+    <ButtonForeColor>-16777216</ButtonForeColor>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>8</CategoryID>
+    <FunctionID>26</FunctionID>
+    <ButtonColor>-3318692</ButtonColor>
+    <ButtonForeColor>-16777216</ButtonForeColor>
+    <FunctionGroupID>99</FunctionGroupID>
+    <FunctionFlag>G</FunctionFlag>
+    <TaxID>0</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>150</CategoryID>
+    <FunctionID>2</FunctionID>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>1</CategoryID>
+    <FunctionID>2</FunctionID>
+    <ButtonColor>-10185235</ButtonColor>
+    <ButtonForeColor>-16777216</ButtonForeColor>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterAllFoodCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>2</CategoryID>
+    <FunctionID>2</FunctionID>
+    <ButtonColor>-6987</ButtonColor>
+    <ButtonForeColor>-16777216</ButtonForeColor>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+  </StarterAllFoodCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>103</CategoryID>
+    <CategoryName>Temperature</CategoryName>
+    <CategoryAbrev>Temp</CategoryAbrev>
+    <CategoryOrder>3</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>105</CategoryID>
+    <CategoryName>Sauces</CategoryName>
+    <CategoryAbrev>Sauces</CategoryAbrev>
+    <CategoryOrder>5</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>102</CategoryID>
+    <CategoryName>Fruits</CategoryName>
+    <CategoryAbrev>Fruits</CategoryAbrev>
+    <CategoryOrder>2</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>101</CategoryID>
+    <CategoryName>Condiments</CategoryName>
+    <CategoryAbrev>Condiments</CategoryAbrev>
+    <CategoryOrder>1</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>4</CategoryID>
+    <CategoryName>Soups</CategoryName>
+    <CategoryAbrev>Soups</CategoryAbrev>
+    <CategoryOrder>4</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>104</CategoryID>
+    <CategoryName>Dressings</CategoryName>
+    <CategoryAbrev>Dressings</CategoryAbrev>
+    <CategoryOrder>4</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>106</CategoryID>
+    <CategoryName>Toppings</CategoryName>
+    <CategoryAbrev>Toppings</CategoryAbrev>
+    <CategoryOrder>6</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>107</CategoryID>
+    <CategoryName>Cheese</CategoryName>
+    <CategoryAbrev>Cheese</CategoryAbrev>
+    <CategoryOrder>7</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterModifierCategory>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000000</LocationID>
+    <CategoryID>115</CategoryID>
+    <CategoryName>Potato Toppings</CategoryName>
+    <CategoryAbrev>Potato Tops</CategoryAbrev>
+    <CategoryOrder>8</CategoryOrder>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionFlag>M</FunctionFlag>
+  </StarterModifierCategory>
+  <StarterLocationOverview>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <CompanyName>eGlobalPartners</CompanyName>
+    <Username>eglobal</Username>
+    <Password>1111</Password>
+    <BackPass>1111</BackPass>
+    <Domain_Report>Tahsc\</Domain_Report>
+    <Hostname_Report>Tahsc\eglobal</Hostname_Report>
+    <Address1>195 Fourteenth Street</Address1>
+    <Address2>Penthouse level, Suite 202</Address2>
+    <City>Atlanta</City>
+    <State>GA</State>
+    <Zip>30380</Zip>
+    <PhoneNumber>(404) 869-4700</PhoneNumber>
+    <UsingDefaults>true</UsingDefaults>
+    <AutoPrint>true</AutoPrint>
+    <EndOfWeek>1</EndOfWeek>
+    <EndOfNightDecimal>0.145840</EndOfNightDecimal>
+    <OvertimeHours>40</OvertimeHours>
+    <OvertimeRate>1.50</OvertimeRate>
+    <OnlyOneLocation>false</OnlyOneLocation>
+    <MerchantID>494901</MerchantID>
+    <OperatorID>eGlobal</OperatorID>
+    <NumberTerminals>2</NumberTerminals>
+    <NumberFloorPlans>2</NumberFloorPlans>
+    <TimeoutSeconds>30</TimeoutSeconds>
+    <ColorAdjust>0</ColorAdjust>
+    <VersionNumber>v 1.0</VersionNumber>
+    <AutoUpdate>false</AutoUpdate>
+    <UsingBartenderMethod>true</UsingBartenderMethod>
+    <BarDoNotPrintDrinks>true</BarDoNotPrintDrinks>
+    <CalculateAvgByEntrees>true</CalculateAvgByEntrees>
+    <IsKitchenExpiditer>true</IsKitchenExpiditer>
+    <IsDelivery>false</IsDelivery>
+    <AutoCloseCheck>false</AutoCloseCheck>
+    <AutoReleaseExperience>false</AutoReleaseExperience>
+    <ServesMixedDrinks>true</ServesMixedDrinks>
+    <DeliveryCharge>1.00</DeliveryCharge>
+    <ToGoCharge>0.25</ToGoCharge>
+    <AutoGratuity>0.18</AutoGratuity>
+    <AutoGratuityNumber>6</AutoGratuityNumber>
+    <SalesTax>0.0700</SalesTax>
+    <ReceiptMessage1>Thank You. We welcome your business.</ReceiptMessage1>
+    <ReceiptMessage2>Have a Great Day!</ReceiptMessage2>
+    <CCMessage1>Please Pay this!</CCMessage1>
+    <DigitsInTicketNumber>6</DigitsInTicketNumber>
+  </StarterLocationOverview>
+</StarterMenu>

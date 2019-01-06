@@ -1,0 +1,462 @@
+<?xml version="1.0" standalone="yes"?>
+<ReportData>
+  <xs:schema id="ReportData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ReportData" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="EmployeeHours">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesByTax">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Taxes" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SinTax" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TaxID" type="xs:int" minOccurs="0" />
+                <xs:element name="TaxName" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxOrder" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="VoidSalesDisc">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Taxes" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SinTax" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CompSalesDisc">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Taxes" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SinTax" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PromoSalesDisc">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Taxes" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SinTax" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesByTaxExempt">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Taxes" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SinTax" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TaxID" type="xs:int" minOccurs="0" />
+                <xs:element name="TaxName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PaymentsByType">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PaymentTypeID" type="xs:int" minOccurs="0" />
+                <xs:element name="PaymentTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Tip" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PaymentFlag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesByCostCenter">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MethodUse" type="xs:string" minOccurs="0" />
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesKitchen">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Covers" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Apps" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Drinks" type="xs:int" minOccurs="0" />
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0023__x0020_in_x0020_Party" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_of_x0020_Checks" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesOpen">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Covers" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Apps" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Drinks" type="xs:int" minOccurs="0" />
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0023__x0020_in_x0020_Party" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_of_x0020_Checks" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesPaid">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Covers" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Apps" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Drinks" type="xs:int" minOccurs="0" />
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0023__x0020_in_x0020_Party" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_of_x0020_Checks" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesPendingDinners">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Covers" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesPendingApps">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Apps" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesPendingDrinks">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_Drinks" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesPendingCustomers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0023__x0020_in_x0020_Party" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_of_x0020_Checks" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ServiceTimes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Avg_x0020_Time" type="xs:int" minOccurs="0" />
+                <xs:element name="Delivered_x0020_Time" type="xs:int" minOccurs="0" />
+                <xs:element name="MethodUse" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesByHour">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OrderHour" type="xs:int" minOccurs="0" />
+                <xs:element name="SvTime" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_of_x0020_Covers" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_in_x0020_Party" type="xs:int" minOccurs="0" />
+                <xs:element name="_x0023__x0020_of_x0020_Checks" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="VoidsByType">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="DiscountNotInSales">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <SalesByTax>
+    <Sales>1296.56</Sales>
+    <Taxes>80.80000000</Taxes>
+    <SinTax>0</SinTax>
+    <TaxID>1</TaxID>
+    <TaxName>Food</TaxName>
+    <TaxOrder>1</TaxOrder>
+  </SalesByTax>
+  <SalesByTax>
+    <Sales>484.50</Sales>
+    <Taxes>32.36000000</Taxes>
+    <SinTax>14.6650</SinTax>
+    <TaxID>2</TaxID>
+    <TaxName>Liquor</TaxName>
+    <TaxOrder>2</TaxOrder>
+  </SalesByTax>
+  <SalesByTax>
+    <Sales>921.60</Sales>
+    <Taxes>63.30000000</Taxes>
+    <SinTax>26.4200</SinTax>
+    <TaxID>4</TaxID>
+    <TaxName>Wine</TaxName>
+    <TaxOrder>3</TaxOrder>
+  </SalesByTax>
+  <SalesByTax>
+    <Sales>12.00</Sales>
+    <Taxes>0.78000000</Taxes>
+    <SinTax>0</SinTax>
+    <TaxID>3</TaxID>
+    <TaxName>Beer</TaxName>
+    <TaxOrder>4</TaxOrder>
+  </SalesByTax>
+  <VoidSalesDisc>
+    <DailyCode>23</DailyCode>
+    <Amount>0.03</Amount>
+    <Taxes>-0.02000000</Taxes>
+    <SinTax>0.6700</SinTax>
+  </VoidSalesDisc>
+  <CompSalesDisc>
+    <DailyCode>23</DailyCode>
+    <Amount>19.00</Amount>
+    <Taxes>1.34000000</Taxes>
+    <SinTax>0.2900</SinTax>
+  </CompSalesDisc>
+  <SalesByTaxExempt>
+    <Sales>14.49</Sales>
+    <Taxes>0</Taxes>
+    <SinTax>0</SinTax>
+    <TaxID>-1</TaxID>
+    <TaxName>Tax Exempt</TaxName>
+  </SalesByTaxExempt>
+  <PaymentsByType>
+    <PaymentTypeID>-7</PaymentTypeID>
+    <PaymentTypeName>Comp'd</PaymentTypeName>
+    <Amount>12.64</Amount>
+    <Tip>0</Tip>
+    <PaymentFlag>Comp</PaymentFlag>
+  </PaymentsByType>
+  <PaymentsByType>
+    <PaymentTypeID>4</PaymentTypeID>
+    <PaymentTypeName>M/C</PaymentTypeName>
+    <Amount>70.80</Amount>
+    <Tip>12.30</Tip>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentsByType>
+  <PaymentsByType>
+    <PaymentTypeID>-3</PaymentTypeID>
+    <PaymentTypeName>cash-out</PaymentTypeName>
+    <Amount>-5.00</Amount>
+    <Tip>0</Tip>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsByType>
+  <PaymentsByType>
+    <PaymentTypeID>1</PaymentTypeID>
+    <PaymentTypeName>Cash</PaymentTypeName>
+    <Amount>1969.00</Amount>
+    <Tip>0</Tip>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsByType>
+  <SalesByCostCenter>
+    <MethodUse>Delivery</MethodUse>
+    <Sales>50.99</Sales>
+  </SalesByCostCenter>
+  <SalesByCostCenter>
+    <MethodUse>Take Out</MethodUse>
+    <Sales>12.00</Sales>
+  </SalesByCostCenter>
+  <SalesByCostCenter>
+    <MethodUse>Dine In</MethodUse>
+    <Sales>2730.80</Sales>
+  </SalesByCostCenter>
+  <SalesKitchen>
+    <DailyCode>23</DailyCode>
+    <_x0023__x0020_Covers>28</_x0023__x0020_Covers>
+    <_x0023__x0020_Apps>74</_x0023__x0020_Apps>
+    <_x0023__x0020_Drinks>151</_x0023__x0020_Drinks>
+    <Sales>1223.15</Sales>
+    <_x0023__x0020_in_x0020_Party>227</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>132</_x0023__x0020_of_x0020_Checks>
+  </SalesKitchen>
+  <SalesOpen>
+    <_x0023__x0020_Covers>0</_x0023__x0020_Covers>
+    <_x0023__x0020_Apps>0</_x0023__x0020_Apps>
+    <_x0023__x0020_Drinks>0</_x0023__x0020_Drinks>
+    <Sales>0</Sales>
+    <_x0023__x0020_in_x0020_Party>0</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>0</_x0023__x0020_of_x0020_Checks>
+  </SalesOpen>
+  <SalesPaid>
+    <DailyCode>23</DailyCode>
+    <_x0023__x0020_Covers>36</_x0023__x0020_Covers>
+    <_x0023__x0020_Apps>67</_x0023__x0020_Apps>
+    <_x0023__x0020_Drinks>35</_x0023__x0020_Drinks>
+    <Sales>684.91</Sales>
+    <_x0023__x0020_in_x0020_Party>106</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>67</_x0023__x0020_of_x0020_Checks>
+  </SalesPaid>
+  <SalesPendingDinners>
+    <DailyCode>23</DailyCode>
+    <_x0023__x0020_Covers>42</_x0023__x0020_Covers>
+  </SalesPendingDinners>
+  <SalesPendingApps>
+    <DailyCode>23</DailyCode>
+    <_x0023__x0020_Apps>93</_x0023__x0020_Apps>
+  </SalesPendingApps>
+  <SalesPendingDrinks>
+    <DailyCode>23</DailyCode>
+    <_x0023__x0020_Drinks>108</_x0023__x0020_Drinks>
+  </SalesPendingDrinks>
+  <SalesPendingCustomers>
+    <DailyCode>23</DailyCode>
+    <_x0023__x0020_in_x0020_Party>16</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>13</_x0023__x0020_of_x0020_Checks>
+  </SalesPendingCustomers>
+  <ServiceTimes>
+    <Avg_x0020_Time>16597</Avg_x0020_Time>
+    <Delivered_x0020_Time>0</Delivered_x0020_Time>
+    <MethodUse>Delivery</MethodUse>
+  </ServiceTimes>
+  <ServiceTimes>
+    <Avg_x0020_Time>47909</Avg_x0020_Time>
+    <Delivered_x0020_Time>4976</Delivered_x0020_Time>
+    <MethodUse>Dine In</MethodUse>
+  </ServiceTimes>
+  <ServiceTimes>
+    <Avg_x0020_Time>0</Avg_x0020_Time>
+    <Delivered_x0020_Time>0</Delivered_x0020_Time>
+    <MethodUse>Return</MethodUse>
+  </ServiceTimes>
+  <ServiceTimes>
+    <Avg_x0020_Time>0</Avg_x0020_Time>
+    <Delivered_x0020_Time>0</Delivered_x0020_Time>
+    <MethodUse>Take Out</MethodUse>
+  </ServiceTimes>
+  <SalesByHour>
+    <Sales>3.00</Sales>
+    <OrderHour>6</OrderHour>
+    <SvTime>0</SvTime>
+    <_x0023__x0020_of_x0020_Covers>0</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>2</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>1</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>227.52</Sales>
+    <OrderHour>8</OrderHour>
+    <SvTime>1430</SvTime>
+    <_x0023__x0020_of_x0020_Covers>3</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>153</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>111</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>101.97</Sales>
+    <OrderHour>9</OrderHour>
+    <SvTime>81</SvTime>
+    <_x0023__x0020_of_x0020_Covers>33</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>27</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>22</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>60.00</Sales>
+    <OrderHour>10</OrderHour>
+    <SvTime>0</SvTime>
+    <_x0023__x0020_of_x0020_Covers>18</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>26</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>17</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>40.40</Sales>
+    <OrderHour>11</OrderHour>
+    <SvTime>90</SvTime>
+    <_x0023__x0020_of_x0020_Covers>12</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>32</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>16</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>47.48</Sales>
+    <OrderHour>12</OrderHour>
+    <SvTime>19</SvTime>
+    <_x0023__x0020_of_x0020_Covers>9</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>24</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>12</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>190.98</Sales>
+    <OrderHour>13</OrderHour>
+    <SvTime>11</SvTime>
+    <_x0023__x0020_of_x0020_Covers>39</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>106</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>147</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>574.89</Sales>
+    <OrderHour>14</OrderHour>
+    <SvTime>9039</SvTime>
+    <_x0023__x0020_of_x0020_Covers>196</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>315</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>169</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>216.49</Sales>
+    <OrderHour>15</OrderHour>
+    <SvTime>2837</SvTime>
+    <_x0023__x0020_of_x0020_Covers>23</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>100</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>38</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>88.00</Sales>
+    <OrderHour>16</OrderHour>
+    <SvTime>2754</SvTime>
+    <_x0023__x0020_of_x0020_Covers>0</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>30</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>17</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>189.00</Sales>
+    <OrderHour>17</OrderHour>
+    <SvTime>9292</SvTime>
+    <_x0023__x0020_of_x0020_Covers>20</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>82</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>70</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>56.59</Sales>
+    <OrderHour>18</OrderHour>
+    <SvTime>10346</SvTime>
+    <_x0023__x0020_of_x0020_Covers>17</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>55</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>28</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>75.00</Sales>
+    <OrderHour>19</OrderHour>
+    <SvTime>0</SvTime>
+    <_x0023__x0020_of_x0020_Covers>5</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>46</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>22</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>34.50</Sales>
+    <OrderHour>20</OrderHour>
+    <SvTime>1</SvTime>
+    <_x0023__x0020_of_x0020_Covers>0</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>18</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>9</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+  <SalesByHour>
+    <Sales>6.00</Sales>
+    <OrderHour>21</OrderHour>
+    <SvTime>0</SvTime>
+    <_x0023__x0020_of_x0020_Covers>0</_x0023__x0020_of_x0020_Covers>
+    <_x0023__x0020_in_x0020_Party>4</_x0023__x0020_in_x0020_Party>
+    <_x0023__x0020_of_x0020_Checks>2</_x0023__x0020_of_x0020_Checks>
+  </SalesByHour>
+</ReportData>

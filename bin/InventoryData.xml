@@ -1,0 +1,618 @@
+<?xml version="1.0" standalone="yes"?>
+<InventoryData>
+  <xs:schema id="InventoryData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="InventoryData" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="RawCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="RawCategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="RawCategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="RawSubCategory" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RawMat">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="RawItemID" type="xs:int" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="RawCategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="RawItemName" type="xs:string" minOccurs="0" />
+                <xs:element name="PurchaseUnits" type="xs:string" minOccurs="0" />
+                <xs:element name="PurchaseCost" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Blank" type="xs:string" minOccurs="0" />
+                <xs:element name="RecipeUnit" type="xs:string" minOccurs="0" />
+                <xs:element name="RecipeConversion" type="xs:short" minOccurs="0" />
+                <xs:element name="UnitCost" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SelectNo" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NoPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SelectExtra" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ExtraPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Blank2" type="xs:string" minOccurs="0" />
+                <xs:element name="PhysicalUnit" type="xs:string" minOccurs="0" />
+                <xs:element name="PhysicalConversion" type="xs:short" minOccurs="0" />
+                <xs:element name="PhysicalUnitCost" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InvDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="InvQuantity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InvDollarAmount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CalculatedBegInvWeek" type="xs:decimal" minOccurs="0" />
+                <xs:element name="RecipeQuantity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TrackInvLevels" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PrintInReport" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Warning" type="xs:boolean" minOccurs="0" />
+                <xs:element name="WarningLevel" type="xs:short" minOccurs="0" />
+                <xs:element name="TempRecipeQuantity" type="xs:short" minOccurs="0" />
+                <xs:element name="Qty" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RawDelivery">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="InvFoodDeliveryID" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="ReceivedDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="RawItemID" type="xs:int" minOccurs="0" />
+                <xs:element name="DeliveredQuantity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InvCounted" type="xs:boolean" minOccurs="0" />
+                <xs:element name="DeliveryFlag" type="xs:string" minOccurs="0" />
+                <xs:element name="StoredAt" type="xs:string" minOccurs="0" />
+                <xs:element name="RawItemName" type="xs:string" minOccurs="0" />
+                <xs:element name="PurchaseUnits" type="xs:string" minOccurs="0" />
+                <xs:element name="Blank" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RawCycle">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <RawCategory>
+    <RawCategoryID>10</RawCategoryID>
+    <RawCategoryName>MEAT &amp; POULTRY</RawCategoryName>
+    <RawSubCategory>10</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>11</RawCategoryID>
+    <RawCategoryName>   Beef</RawCategoryName>
+    <RawSubCategory>10</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>12</RawCategoryID>
+    <RawCategoryName>   Pork</RawCategoryName>
+    <RawSubCategory>10</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>13</RawCategoryID>
+    <RawCategoryName>   Chicken</RawCategoryName>
+    <RawSubCategory>10</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>14</RawCategoryID>
+    <RawCategoryName>   Other Meat</RawCategoryName>
+    <RawSubCategory>10</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>20</RawCategoryID>
+    <RawCategoryName>FISH &amp; SEAFOOD</RawCategoryName>
+    <RawSubCategory>20</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>30</RawCategoryID>
+    <RawCategoryName>PRODUCE</RawCategoryName>
+    <RawSubCategory>30</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>40</RawCategoryID>
+    <RawCategoryName>DAIRY</RawCategoryName>
+    <RawSubCategory>40</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>50</RawCategoryID>
+    <RawCategoryName>GROCERY/DRY GOODS</RawCategoryName>
+    <RawSubCategory>50</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>1010</RawCategoryID>
+    <RawCategoryName>LIQUOR</RawCategoryName>
+    <RawSubCategory>1010</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>1050</RawCategoryID>
+    <RawCategoryName>BEER</RawCategoryName>
+    <RawSubCategory>1050</RawSubCategory>
+  </RawCategory>
+  <RawCategory>
+    <RawCategoryID>1100</RawCategoryID>
+    <RawCategoryName>WINE</RawCategoryName>
+    <RawSubCategory>1100</RawSubCategory>
+  </RawCategory>
+  <RawMat>
+    <RawItemID>17</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>11</RawCategoryID>
+    <RawItemName>Ground Chuck</RawItemName>
+    <PurchaseUnits>lb</PurchaseUnits>
+    <PurchaseCost>2.50</PurchaseCost>
+    <Blank>   </Blank>
+    <RecipeUnit>oz</RecipeUnit>
+    <RecipeConversion>16</RecipeConversion>
+    <UnitCost>0.15625000</UnitCost>
+    <SelectNo>false</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>false</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <Blank2>   </Blank2>
+    <PhysicalUnit>lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>2.50000000</PhysicalUnitCost>
+    <InvQuantity>5.312500</InvQuantity>
+    <InvDollarAmount>13.28125000</InvDollarAmount>
+    <CalculatedBegInvWeek>4.0</CalculatedBegInvWeek>
+    <RecipeQuantity>85</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>7.275000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>2</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>11</RawCategoryID>
+    <RawItemName>Hamburger Meat</RawItemName>
+    <PurchaseUnits>10 lb</PurchaseUnits>
+    <PurchaseCost>7.00</PurchaseCost>
+    <RecipeUnit>oz</RecipeUnit>
+    <RecipeConversion>100</RecipeConversion>
+    <UnitCost>0.07000000</UnitCost>
+    <SelectNo>false</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>false</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>lb</PhysicalUnit>
+    <PhysicalConversion>10</PhysicalConversion>
+    <PhysicalUnitCost>0.70000000</PhysicalUnitCost>
+    <InvQuantity>5.000000</InvQuantity>
+    <InvDollarAmount>35.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>5.0</CalculatedBegInvWeek>
+    <RecipeQuantity>500</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>5.220000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>13</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>30</RawCategoryID>
+    <RawItemName>Lettuce</RawItemName>
+    <PurchaseUnits>3# Box</PurchaseUnits>
+    <PurchaseCost>2.00</PurchaseCost>
+    <RecipeUnit />
+    <RecipeConversion>1000</RecipeConversion>
+    <UnitCost>0.00200000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>3# Box</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>2.00000000</PhysicalUnitCost>
+    <InvQuantity>14.000000</InvQuantity>
+    <InvDollarAmount>28.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>12.0</CalculatedBegInvWeek>
+    <RecipeQuantity>14000</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>41.926000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>14</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>50</RawCategoryID>
+    <RawItemName>Olive Oil</RawItemName>
+    <PurchaseUnits>2lb Can</PurchaseUnits>
+    <PurchaseCost>8.00</PurchaseCost>
+    <RecipeUnit />
+    <RecipeConversion>1000</RecipeConversion>
+    <UnitCost>0.00800000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>2 lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>8.00000000</PhysicalUnitCost>
+    <InvQuantity>17.000000</InvQuantity>
+    <InvDollarAmount>136.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>15.0</CalculatedBegInvWeek>
+    <RecipeQuantity>17000</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>33.986000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>19</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>30</RawCategoryID>
+    <RawItemName>Onion</RawItemName>
+    <PurchaseUnits>3# Bag</PurchaseUnits>
+    <PurchaseCost>6.00</PurchaseCost>
+    <Blank>   </Blank>
+    <RecipeUnit>1/8</RecipeUnit>
+    <RecipeConversion>80</RecipeConversion>
+    <UnitCost>0.07500000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <Blank2>   </Blank2>
+    <PhysicalUnit>3# Bag</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>6.00000000</PhysicalUnitCost>
+    <InvQuantity>4.000000</InvQuantity>
+    <InvDollarAmount>24.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>4.0</CalculatedBegInvWeek>
+    <RecipeQuantity>320</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>2.587500</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>12</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>50</RawCategoryID>
+    <RawItemName>Oragano</RawItemName>
+    <PurchaseUnits>3 lb</PurchaseUnits>
+    <PurchaseCost>10.00</PurchaseCost>
+    <RecipeUnit>tsp</RecipeUnit>
+    <RecipeConversion>200</RecipeConversion>
+    <UnitCost>0.05000000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>3 lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>10.00000000</PhysicalUnitCost>
+    <InvQuantity>10.000000</InvQuantity>
+    <InvDollarAmount>100.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>9.0</CalculatedBegInvWeek>
+    <RecipeQuantity>2000</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>2.525000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>11</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>50</RawCategoryID>
+    <RawItemName>Pepper</RawItemName>
+    <PurchaseUnits>3 lb</PurchaseUnits>
+    <PurchaseCost>10.00</PurchaseCost>
+    <RecipeUnit>tsp</RecipeUnit>
+    <RecipeConversion>200</RecipeConversion>
+    <UnitCost>0.05000000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0.22</ExtraPrice>
+    <PhysicalUnit>3 lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>10.00000000</PhysicalUnitCost>
+    <InvQuantity>5.000000</InvQuantity>
+    <InvDollarAmount>50.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>5.0</CalculatedBegInvWeek>
+    <RecipeQuantity>1000</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>1.980000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>4</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>30</RawCategoryID>
+    <RawItemName>pepperoni</RawItemName>
+    <PurchaseUnits>12 # </PurchaseUnits>
+    <PurchaseCost>20.00</PurchaseCost>
+    <RecipeUnit>oz</RecipeUnit>
+    <RecipeConversion>192</RecipeConversion>
+    <UnitCost>0.10416666</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0.22</ExtraPrice>
+    <PhysicalUnit>12 #</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>20.00000000</PhysicalUnitCost>
+    <InvQuantity>3.000000</InvQuantity>
+    <InvDollarAmount>60.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>3.0</CalculatedBegInvWeek>
+    <RecipeQuantity>576</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>1.872395</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>10</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>50</RawCategoryID>
+    <RawItemName>Salt</RawItemName>
+    <PurchaseUnits>3 lb</PurchaseUnits>
+    <PurchaseCost>27.00</PurchaseCost>
+    <RecipeUnit>tsp</RecipeUnit>
+    <RecipeConversion>200</RecipeConversion>
+    <UnitCost>0.13500000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>3 lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>27.00000000</PhysicalUnitCost>
+    <InvQuantity>7.000000</InvQuantity>
+    <InvDollarAmount>189.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>7.0</CalculatedBegInvWeek>
+    <RecipeQuantity>1400</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>0.990000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>15</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>50</RawCategoryID>
+    <RawItemName>Spice, Clove</RawItemName>
+    <PurchaseUnits>3 lb</PurchaseUnits>
+    <PurchaseCost>2.50</PurchaseCost>
+    <Blank>   </Blank>
+    <RecipeUnit>tsp</RecipeUnit>
+    <RecipeConversion>200</RecipeConversion>
+    <UnitCost>0.01250000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <Blank2>   </Blank2>
+    <PhysicalUnit>3 lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>2.50000000</PhysicalUnitCost>
+    <InvQuantity>0</InvQuantity>
+    <InvDollarAmount>0</InvDollarAmount>
+    <CalculatedBegInvWeek>0</CalculatedBegInvWeek>
+    <RecipeQuantity>0</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>1.000000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>16</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>14</RawCategoryID>
+    <RawItemName>Stew Meat</RawItemName>
+    <PurchaseUnits>lb</PurchaseUnits>
+    <PurchaseCost>2.50</PurchaseCost>
+    <Blank>   </Blank>
+    <RecipeUnit>oz</RecipeUnit>
+    <RecipeConversion>16</RecipeConversion>
+    <UnitCost>0.15625000</UnitCost>
+    <SelectNo>false</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>false</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <Blank2>   </Blank2>
+    <PhysicalUnit>lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>2.50000000</PhysicalUnitCost>
+    <InvQuantity>4.000000</InvQuantity>
+    <InvDollarAmount>10.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>4.0</CalculatedBegInvWeek>
+    <RecipeQuantity>64</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>12.000000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>3</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>11</RawCategoryID>
+    <RawItemName>Tenderloin</RawItemName>
+    <PurchaseUnits>12 lb</PurchaseUnits>
+    <PurchaseCost>35.00</PurchaseCost>
+    <RecipeUnit>oz</RecipeUnit>
+    <RecipeConversion>192</RecipeConversion>
+    <UnitCost>0.18229166</UnitCost>
+    <SelectNo>false</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>false</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>12 lb</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>35.00000000</PhysicalUnitCost>
+    <InvQuantity>4.000000</InvQuantity>
+    <InvDollarAmount>140.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>2.0</CalculatedBegInvWeek>
+    <RecipeQuantity>768</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>2.000000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>18</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>30</RawCategoryID>
+    <RawItemName>Tomato</RawItemName>
+    <PurchaseUnits>3# Box</PurchaseUnits>
+    <PurchaseCost>10.00</PurchaseCost>
+    <Blank>   </Blank>
+    <RecipeUnit>slice</RecipeUnit>
+    <RecipeConversion>200</RecipeConversion>
+    <UnitCost>0.05000000</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <Blank2>   </Blank2>
+    <PhysicalUnit>piece</PhysicalUnit>
+    <PhysicalConversion>20</PhysicalConversion>
+    <PhysicalUnitCost>0.50000000</PhysicalUnitCost>
+    <InvQuantity>2.000000</InvQuantity>
+    <InvDollarAmount>20.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>2.0</CalculatedBegInvWeek>
+    <RecipeQuantity>400</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>1.870000</Qty>
+  </RawMat>
+  <RawMat>
+    <RawItemID>1</RawItemID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <RawCategoryID>50</RawCategoryID>
+    <RawItemName>Tomato Sauce</RawItemName>
+    <PurchaseUnits>64 oz</PurchaseUnits>
+    <PurchaseCost>7.00</PurchaseCost>
+    <RecipeUnit>oz</RecipeUnit>
+    <RecipeConversion>64</RecipeConversion>
+    <UnitCost>0.10937500</UnitCost>
+    <SelectNo>true</SelectNo>
+    <NoPrice>0</NoPrice>
+    <SelectExtra>true</SelectExtra>
+    <ExtraPrice>0</ExtraPrice>
+    <PhysicalUnit>64 oz</PhysicalUnit>
+    <PhysicalConversion>1</PhysicalConversion>
+    <PhysicalUnitCost>7.00000000</PhysicalUnitCost>
+    <InvQuantity>10.000000</InvQuantity>
+    <InvDollarAmount>70.00000000</InvDollarAmount>
+    <CalculatedBegInvWeek>8.0</CalculatedBegInvWeek>
+    <RecipeQuantity>640</RecipeQuantity>
+    <TrackInvLevels>true</TrackInvLevels>
+    <PrintInReport>true</PrintInReport>
+    <Warning>true</Warning>
+    <WarningLevel>0</WarningLevel>
+    <TempRecipeQuantity>0</TempRecipeQuantity>
+    <Qty>5.812500</Qty>
+  </RawMat>
+  <RawDelivery>
+    <InvFoodDeliveryID>1</InvFoodDeliveryID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>23</DailyCode>
+    <ReceivedDate>2007-09-20T00:00:00.0000000-04:00</ReceivedDate>
+    <EmployeeID>4001</EmployeeID>
+    <RawItemID>17</RawItemID>
+    <DeliveredQuantity>1.00</DeliveredQuantity>
+    <InvCounted>false</InvCounted>
+    <DeliveryFlag>F</DeliveryFlag>
+    <StoredAt>A</StoredAt>
+    <RawItemName>Ground Chuck</RawItemName>
+    <PurchaseUnits>lb</PurchaseUnits>
+    <Blank>   </Blank>
+  </RawDelivery>
+  <RawDelivery>
+    <InvFoodDeliveryID>2</InvFoodDeliveryID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>23</DailyCode>
+    <ReceivedDate>2007-10-18T00:00:00.0000000-04:00</ReceivedDate>
+    <EmployeeID>4001</EmployeeID>
+    <RawItemID>17</RawItemID>
+    <DeliveredQuantity>1.20</DeliveredQuantity>
+    <InvCounted>false</InvCounted>
+    <DeliveryFlag>F</DeliveryFlag>
+    <StoredAt>A</StoredAt>
+    <RawItemName>Ground Chuck</RawItemName>
+    <PurchaseUnits>lb</PurchaseUnits>
+    <Blank>   </Blank>
+  </RawDelivery>
+  <RawDelivery>
+    <InvFoodDeliveryID>3</InvFoodDeliveryID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>23</DailyCode>
+    <ReceivedDate>2007-10-18T00:00:00.0000000-04:00</ReceivedDate>
+    <EmployeeID>4001</EmployeeID>
+    <RawItemID>2</RawItemID>
+    <DeliveredQuantity>2.00</DeliveredQuantity>
+    <InvCounted>false</InvCounted>
+    <DeliveryFlag>F</DeliveryFlag>
+    <StoredAt>A</StoredAt>
+    <RawItemName>Hamburger Meat</RawItemName>
+    <PurchaseUnits>10 lb</PurchaseUnits>
+  </RawDelivery>
+  <RawDelivery>
+    <InvFoodDeliveryID>4</InvFoodDeliveryID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>23</DailyCode>
+    <ReceivedDate>2007-10-20T00:00:00.0000000-04:00</ReceivedDate>
+    <EmployeeID>4001</EmployeeID>
+    <RawItemID>3</RawItemID>
+    <DeliveredQuantity>1.00</DeliveredQuantity>
+    <InvCounted>false</InvCounted>
+    <DeliveryFlag>F</DeliveryFlag>
+    <StoredAt>A</StoredAt>
+    <RawItemName>Tenderloin</RawItemName>
+    <PurchaseUnits>12 lb</PurchaseUnits>
+  </RawDelivery>
+</InventoryData>

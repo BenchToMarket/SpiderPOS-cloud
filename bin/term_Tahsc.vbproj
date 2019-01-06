@@ -1,0 +1,672 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{2D079F9E-4B79-4507-ADF6-DFC6C80FB29C}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "term_Tahsc"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "term_Tahsc"
+                StartupObject = "term_Tahsc.Login"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "DataSet_Builder"
+                    Project = "{D2F8A0CB-3E3D-4DB4-9624-DC3A4C54AE85}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                />
+                <Reference
+                    Name = "DSICLIENTXLib"
+                    Guid = "{E01EB3B2-F615-11D5-9EC5-0003B3008F24}"
+                    VersionMajor = "3"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                    Private = "True"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "app.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BatchClose_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BatchClose_UC.resx"
+                    DependentUpon = "BatchClose_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CashClose_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CashClose_UC.resx"
+                    DependentUpon = "CashClose_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CashDrawer_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CashDrawer_UC.resx"
+                    DependentUpon = "CashDrawer_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CashOut_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CashOut_UC.resx"
+                    DependentUpon = "CashOut_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CheckAdjustmentOverride_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CheckAdjustmentOverride_UC.resx"
+                    DependentUpon = "CheckAdjustmentOverride_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CheckTotal_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CheckTotal_UC.resx"
+                    DependentUpon = "CheckTotal_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ClockInUserControl.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ClockInUserControl.resx"
+                    DependentUpon = "ClockInUserControl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ClockOut_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ClockOut_UC.resx"
+                    DependentUpon = "ClockOut_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CloseCheck.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CloseCheck.resx"
+                    DependentUpon = "CloseCheck.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Comp_Ticket_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Comp_Ticket_UC.resx"
+                    DependentUpon = "Comp_Ticket_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ConnectionDown_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConnectionDown_UC.resx"
+                    DependentUpon = "ConnectionDown_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EmployeeLoggedInUserControl.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EmployeeLoggedInUserControl.resx"
+                    DependentUpon = "EmployeeLoggedInUserControl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ExtraNo_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ExtraNo_UC.resx"
+                    DependentUpon = "ExtraNo_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ForcePrice_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ForcePrice_UC.resx"
+                    DependentUpon = "ForcePrice_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "GenerateOrderTables.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GenerateWorkingCollections.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "KitchenButton.vb"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "KitchenButton.resx"
+                    DependentUpon = "KitchenButton.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "LastOrder_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LastOrder_UC.resx"
+                    DependentUpon = "LastOrder_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Login.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Login.resx"
+                    DependentUpon = "Login.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Manager_Form.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Manager_Form.resx"
+                    DependentUpon = "Manager_Form.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Manager_Main_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Manager_Main_UC.resx"
+                    DependentUpon = "Manager_Main_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Manager_OrderAdj_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Manager_OrderAdj_UC.resx"
+                    DependentUpon = "Manager_OrderAdj_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Manager_Transfer+UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Manager_Transfer+UC.resx"
+                    DependentUpon = "Manager_Transfer+UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Menu.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ModifyOrder_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ModifyOrder_UC.resx"
+                    DependentUpon = "ModifyOrder_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NumberPad.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NumberPad.resx"
+                    DependentUpon = "NumberPad.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "NumberPadSmall_Black.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NumberPadSmall_Black.resx"
+                    DependentUpon = "NumberPadSmall_Black.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OpeningScreen.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OpeningScreen.resx"
+                    DependentUpon = "OpeningScreen.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OrderButton.vb"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OrderButton.resx"
+                    DependentUpon = "OrderButton.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OrderCloseGridColumn.vb"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OrderGrid.vb"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OrderGrid.resx"
+                    DependentUpon = "OrderGrid.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OrderGridColumn.vb"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OrderGridColumn.resx"
+                    DependentUpon = "OrderGridColumn.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "OrderGridColumnPrice.vb"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OrderGridView.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OrderGridView.resx"
+                    DependentUpon = "OrderGridView.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PrinterHelperMgr.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PrintHelper.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReadCredit.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReadCreditOld.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReturnCredit_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReturnCredit_UC.resx"
+                    DependentUpon = "ReturnCredit_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Seating_ChooseTable.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Seating_ChooseTable.resx"
+                    DependentUpon = "Seating_ChooseTable.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Seating_ColorCode.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Seating_ColorCode.resx"
+                    DependentUpon = "Seating_ColorCode.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Seating_EnterTab.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Seating_EnterTab.resx"
+                    DependentUpon = "Seating_EnterTab.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Seating_FloorPlan.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Seating_FloorPlan.resx"
+                    DependentUpon = "Seating_FloorPlan.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Seating_Table_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Seating_Table_UC.resx"
+                    DependentUpon = "Seating_Table_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Seating_Table_UC2.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Seating_Table_UC2.resx"
+                    DependentUpon = "Seating_Table_UC2.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SelectionBat_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SelectionBat_UC.resx"
+                    DependentUpon = "SelectionBat_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SelectionDaily_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SelectionDaily_UC.resx"
+                    DependentUpon = "SelectionDaily_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SpecialFood.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SpecialFood.resx"
+                    DependentUpon = "SpecialFood.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SplitChecks.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SplitChecks.resx"
+                    DependentUpon = "SplitChecks.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SplitGridPanel.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SplitGridPanel.resx"
+                    DependentUpon = "SplitGridPanel.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SplitItemUserControl.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SplitItemUserControl.resx"
+                    DependentUpon = "SplitItemUserControl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tab_Screen.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tab_Screen.resx"
+                    DependentUpon = "Tab_Screen.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Tables_Screen_Bar.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Tables_Screen_Bar.resx"
+                    DependentUpon = "Tables_Screen_Bar.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "TabSelection_UC.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TabSelection_UC.resx"
+                    DependentUpon = "TabSelection_UC.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "term_OrderForm.vb"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "term_OrderForm.resx"
+                    DependentUpon = "term_OrderForm.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "term_Tahsc_main.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TStream.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </VisualBasic>
+</VisualStudioProject>
+

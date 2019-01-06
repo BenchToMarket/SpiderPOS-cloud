@@ -1,0 +1,65 @@
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\Spider POS.exe.config
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\Spider POS.exe.manifest
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\Spider POS.application
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\Spider POS.exe
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\Spider POS.pdb
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\Spider POS.xml
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\DataSet_Builder.dll
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\DataSet_Builder.pdb
+C:\DataFiles\Visual Studio 2008\term_Tahsc\bin\DataSet_Builder.xml
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\ResolveAssemblyReference.cache
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.BatchClose_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.CashClose_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.CashDrawer_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.CashOut_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.CheckAdjustmentOverride_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.CheckTotal_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ClockInUserControl.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ClockOut_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.CloseCheck.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Comp_Ticket_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ConnectionDown_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.DrinkPrep_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.EmployeeLoggedInUserControl.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ExtraNo_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ForcePrice_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.KitchenButton.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.LastOrder_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Login.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Manager_Form.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Manager_Main_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Manager_OrderAdj_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Manager_Transfer_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ModifyOrder_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Resources.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.NumberPadSmall.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.OpeningScreen.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.OrderButton.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.OrderGrid.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.OrderGridColumn.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.OrderGridView.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.ReturnCredit_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Seating_ChooseTable.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Seating_ColorCode.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Seating_EnterTab.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Seating_FloorPlan.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Seating_Table_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Seating_Table_UC2.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.SelectionBat_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.SelectionDaily_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.SpecialFood.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.SplitChecks.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.SplitGridPanel.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.SplitItemUserControl.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Tables_Screen_Bar.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.TabSelection_UC.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Tab_Screen.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.term_OrderForm.resources
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.vbproj.GenerateResource.Cache
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\Spider POS.TrustInfo.xml
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\Spider POS.exe.manifest
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\Spider POS.application
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\Spider POS.exe
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\Spider POS.xml
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\Spider POS.pdb
+C:\DataFiles\Visual Studio 2008\term_Tahsc\obj\Debug\SpiderPOS.Training_UC.resources

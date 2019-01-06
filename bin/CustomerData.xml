@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="yes"?>
+<Customer>
+  <xs:schema id="Customer" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Customer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="TabDirectorySearch">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TabID" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="AccountNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="AccountPhone" type="xs:string" minOccurs="0" />
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+                <xs:element name="NickName" type="xs:string" minOccurs="0" />
+                <xs:element name="Address1" type="xs:string" minOccurs="0" />
+                <xs:element name="Address2" type="xs:string" minOccurs="0" />
+                <xs:element name="City" type="xs:string" minOccurs="0" />
+                <xs:element name="State" type="xs:string" minOccurs="0" />
+                <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+                <xs:element name="Country" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone1" type="xs:string" minOccurs="0" />
+                <xs:element name="Ext1" type="xs:string" minOccurs="0" />
+                <xs:element name="Phone2" type="xs:string" minOccurs="0" />
+                <xs:element name="Ext2" type="xs:string" minOccurs="0" />
+                <xs:element name="DeliveryZone" type="xs:int" minOccurs="0" />
+                <xs:element name="CrossRoads" type="xs:string" minOccurs="0" />
+                <xs:element name="SpecialInstructions" type="xs:string" minOccurs="0" />
+                <xs:element name="DoNotDeliver" type="xs:boolean" minOccurs="0" />
+                <xs:element name="VIP" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UpdatedDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="UpdatedByEmployee" type="xs:int" minOccurs="0" />
+                <xs:element name="Active" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenChar1" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="TabPreviousOrders">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="ExperienceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TabID" type="xs:long" minOccurs="0" />
+                <xs:element name="ClosedSubTotal" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NumberOfDinners" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfApps" type="xs:int" minOccurs="0" />
+                <xs:element name="TotalDollar" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="TabPreviousOrdersbyItem">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="MenuID" type="xs:int" minOccurs="0" />
+                <xs:element name="CustomerNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="CourseNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="sin" type="xs:int" minOccurs="0" />
+                <xs:element name="sii" type="xs:int" minOccurs="0" />
+                <xs:element name="si2" type="xs:int" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemID" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemName" type="xs:string" minOccurs="0" />
+                <xs:element name="TerminalName" type="xs:string" minOccurs="0" />
+                <xs:element name="ChitName" type="xs:string" minOccurs="0" />
+                <xs:element name="ItemPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Price" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TaxPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="FunctionID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="FoodID" type="xs:int" minOccurs="0" />
+                <xs:element name="DrinkCategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="DrinkID" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemStatus" type="xs:int" minOccurs="0" />
+                <xs:element name="RoutingID" type="xs:int" minOccurs="0" />
+                <xs:element name="PrintPriorityID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionGroupID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionFlag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+</Customer>

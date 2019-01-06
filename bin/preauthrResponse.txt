@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RStream>
+	<CmdResponse>
+		<ResponseOrigin>Processor</ResponseOrigin>
+		<DSIXReturnCode>000000</DSIXReturnCode>
+		<CmdStatus>Approved</CmdStatus>
+		<TextResponse>AP</TextResponse>
+		<UserTraceData></UserTraceData>
+	</CmdResponse>
+	<TranResponse>
+		<MerchantID>494901</MerchantID>
+		<AcctNo>5499990123456781</AcctNo>
+		<ExpDate>0809</ExpDate>
+		<CardType>M/C</CardType>
+		<TranCode>PreAuth</TranCode>
+		<AuthCode>000097</AuthCode>
+		<InvoiceNo>224-1</InvoiceNo>
+		<OperatorID>eGlobal</OperatorID>
+		<Amount>
+			<Purchase>3.14</Purchase>
+			<Authorize>3.77</Authorize>
+		</Amount>
+		<AcqRefData>Kb9012345670510  </AcqRefData>
+	</TranResponse>
+</RStream>

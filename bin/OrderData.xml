@@ -1,0 +1,3173 @@
+<?xml version="1.0" standalone="yes"?>
+<OrderData>
+  <xs:schema id="OrderData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="OrderData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="OpenOrders">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OpenOrderID" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="OrderNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="ShiftID" type="xs:int" minOccurs="0" />
+                <xs:element name="MenuID" type="xs:int" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="CheckNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="CustomerNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="CourseNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="sin" type="xs:int" minOccurs="0" />
+                <xs:element name="sii" type="xs:int" minOccurs="0" />
+                <xs:element name="si2" type="xs:int" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemID" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemName" type="xs:string" minOccurs="0" />
+                <xs:element name="TerminalName" type="xs:string" minOccurs="0" />
+                <xs:element name="ChitName" type="xs:string" minOccurs="0" />
+                <xs:element name="ItemPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Price" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TaxPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SinTax" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TaxID" type="xs:int" minOccurs="0" />
+                <xs:element name="ForceFreeID" type="xs:long" minOccurs="0" />
+                <xs:element name="ForceFreeAuth" type="xs:int" minOccurs="0" />
+                <xs:element name="ForceFreeCode" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionID" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="FoodID" type="xs:int" minOccurs="0" />
+                <xs:element name="DrinkCategoryID" type="xs:int" minOccurs="0" />
+                <xs:element name="DrinkID" type="xs:int" minOccurs="0" />
+                <xs:element name="ItemStatus" type="xs:int" minOccurs="0" />
+                <xs:element name="RoutingID" type="xs:int" minOccurs="0" />
+                <xs:element name="PrintPriorityID" type="xs:int" minOccurs="0" />
+                <xs:element name="Repeat" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+                <xs:element name="OpenDecimal1" type="xs:long" minOccurs="0" />
+                <xs:element name="FunctionGroupID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionFlag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="OrderDetail">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="OrderTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OrderReady" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OrderFilled" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NumberOfDinners" type="xs:short" minOccurs="0" />
+                <xs:element name="NumberOfApps" type="xs:short" minOccurs="0" />
+                <xs:element name="NumberOfDrinks" type="xs:short" minOccurs="0" />
+                <xs:element name="isMainCourse" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TotalDollar" type="xs:decimal" minOccurs="0" />
+                <xs:element name="AvgDollar" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ExperienceDate" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="OrderForceFree">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CurrentlyHeld">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="ExperienceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LoginTrackingID" type="xs:long" minOccurs="0" />
+                <xs:element name="TableNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="TabID" type="xs:long" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="TicketNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfCustomers" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfChecks" type="xs:int" minOccurs="0" />
+                <xs:element name="ShiftID" type="xs:int" minOccurs="0" />
+                <xs:element name="MenuID" type="xs:int" minOccurs="0" />
+                <xs:element name="CheckDown" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="FoodOrdered" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AvailForSeating" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LastStatus" type="xs:int" minOccurs="0" />
+                <xs:element name="LastStatusTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ItemsOnHold" type="xs:short" minOccurs="0" />
+                <xs:element name="LastView" type="xs:string" minOccurs="0" />
+                <xs:element name="ClosedSubTotal" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                <xs:element name="AutoGratuity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MethodUse" type="xs:string" minOccurs="0" />
+                <xs:element name="Delivery" type="xs:string" minOccurs="0" />
+                <xs:element name="TabIndicator" type="xs:string" minOccurs="0" />
+                <xs:element name="Reference" type="xs:string" minOccurs="0" />
+                <xs:element name="CurrentlyHeld" type="xs:string" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="AvailTables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="ExperienceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LoginTrackingID" type="xs:long" minOccurs="0" />
+                <xs:element name="TableNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="TabID" type="xs:long" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="TicketNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfCustomers" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfChecks" type="xs:int" minOccurs="0" />
+                <xs:element name="ShiftID" type="xs:int" minOccurs="0" />
+                <xs:element name="MenuID" type="xs:int" minOccurs="0" />
+                <xs:element name="CheckDown" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="FoodOrdered" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AvailForSeating" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LastStatus" type="xs:int" minOccurs="0" />
+                <xs:element name="LastStatusTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ItemsOnHold" type="xs:short" minOccurs="0" />
+                <xs:element name="LastView" type="xs:string" minOccurs="0" />
+                <xs:element name="ClosedSubTotal" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                <xs:element name="AutoGratuity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MethodUse" type="xs:string" minOccurs="0" />
+                <xs:element name="Delivery" type="xs:string" minOccurs="0" />
+                <xs:element name="TabIndicator" type="xs:string" minOccurs="0" />
+                <xs:element name="Reference" type="xs:string" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="AvailTabs">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="ExperienceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LoginTrackingID" type="xs:long" minOccurs="0" />
+                <xs:element name="TableNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="TabID" type="xs:long" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="TicketNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfCustomers" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfChecks" type="xs:int" minOccurs="0" />
+                <xs:element name="ShiftID" type="xs:int" minOccurs="0" />
+                <xs:element name="MenuID" type="xs:int" minOccurs="0" />
+                <xs:element name="CheckDown" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="FoodOrdered" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AvailForSeating" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LastStatus" type="xs:int" minOccurs="0" />
+                <xs:element name="LastStatusTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ItemsOnHold" type="xs:short" minOccurs="0" />
+                <xs:element name="LastView" type="xs:string" minOccurs="0" />
+                <xs:element name="ClosedSubTotal" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                <xs:element name="AutoGratuity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MethodUse" type="xs:string" minOccurs="0" />
+                <xs:element name="Delivery" type="xs:string" minOccurs="0" />
+                <xs:element name="TabIndicator" type="xs:string" minOccurs="0" />
+                <xs:element name="Reference" type="xs:string" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="QuickTickets">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="ExperienceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LoginTrackingID" type="xs:long" minOccurs="0" />
+                <xs:element name="TableNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="TabID" type="xs:long" minOccurs="0" />
+                <xs:element name="TabName" type="xs:string" minOccurs="0" />
+                <xs:element name="TicketNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfCustomers" type="xs:int" minOccurs="0" />
+                <xs:element name="NumberOfChecks" type="xs:int" minOccurs="0" />
+                <xs:element name="ShiftID" type="xs:int" minOccurs="0" />
+                <xs:element name="MenuID" type="xs:int" minOccurs="0" />
+                <xs:element name="CheckDown" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="FoodOrdered" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AvailForSeating" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LastStatus" type="xs:int" minOccurs="0" />
+                <xs:element name="LastStatusTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ItemsOnHold" type="xs:short" minOccurs="0" />
+                <xs:element name="LastView" type="xs:string" minOccurs="0" />
+                <xs:element name="ClosedSubTotal" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                <xs:element name="AutoGratuity" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MethodUse" type="xs:string" minOccurs="0" />
+                <xs:element name="Delivery" type="xs:string" minOccurs="0" />
+                <xs:element name="TabIndicator" type="xs:string" minOccurs="0" />
+                <xs:element name="Reference" type="xs:string" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="AllTables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="TableOverviewID" type="xs:int" minOccurs="0" />
+                <xs:element name="TableNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="MaxExpNumByTable" type="xs:long" minOccurs="0" />
+                <xs:element name="SatTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="TableStatusID" type="xs:int" minOccurs="0" />
+                <xs:element name="LastStatusTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ItemsOnHold" type="xs:short" minOccurs="0" />
+                <xs:element name="FloorPlanID" type="xs:int" minOccurs="0" />
+                <xs:element name="TableSectionID" type="xs:int" minOccurs="0" />
+                <xs:element name="Seats" type="xs:int" minOccurs="0" />
+                <xs:element name="Available" type="xs:boolean" minOccurs="0" />
+                <xs:element name="isTable" type="xs:boolean" minOccurs="0" />
+                <xs:element name="isRound" type="xs:boolean" minOccurs="0" />
+                <xs:element name="xLoc" type="xs:short" minOccurs="0" />
+                <xs:element name="yLoc" type="xs:short" minOccurs="0" />
+                <xs:element name="myWidth" type="xs:short" minOccurs="0" />
+                <xs:element name="myHeight" type="xs:short" minOccurs="0" />
+                <xs:element name="Active" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OpenBigInt1" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="UnNamedTabID">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="OpenedTabID">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="UnNamedTabs">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClosedTables">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClosedTabs">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="OpenBusiness">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="StartTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="EndTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="EmployeeOpened" type="xs:int" minOccurs="0" />
+                <xs:element name="EmployeeClosed" type="xs:int" minOccurs="0" />
+                <xs:element name="PrimaryMenu" type="xs:int" minOccurs="0" />
+                <xs:element name="SecondaryMenu" type="xs:int" minOccurs="0" />
+                <xs:element name="ShiftID" type="xs:int" minOccurs="0" />
+                <xs:element name="InvCounted" type="xs:short" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="TermsOpen">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TerminalsOpenID" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="TerminalsPrimaryKey" type="xs:int" minOccurs="0" />
+                <xs:element name="OpenBy" type="xs:short" minOccurs="0" />
+                <xs:element name="OpenTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OpenCash" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CloseBy" type="xs:short" minOccurs="0" />
+                <xs:element name="CloseTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CloseCash" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CashIn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CashOut" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OverShort" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ReasonShort" type="xs:string" minOccurs="0" />
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CashIn">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CashOut">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="OrderByPrinter">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CurrentStatus">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Adjustment">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PaymentsAndCredits">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PaymentsAndCreditsID" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="DailyCode" type="xs:long" minOccurs="0" />
+                <xs:element name="ExperienceNumber" type="xs:long" minOccurs="0" />
+                <xs:element name="PaymentDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="CheckNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="PaymentTypeID" type="xs:int" minOccurs="0" />
+                <xs:element name="AccountNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="CCExpiration" type="xs:string" minOccurs="0" />
+                <xs:element name="CVV" type="xs:string" minOccurs="0" />
+                <xs:element name="Track2" type="xs:string" minOccurs="0" />
+                <xs:element name="CustomerName" type="xs:string" minOccurs="0" />
+                <xs:element name="TransactionType" type="xs:string" minOccurs="0" />
+                <xs:element name="TransactionCode" type="xs:string" minOccurs="0" />
+                <xs:element name="SwipeType" type="xs:int" minOccurs="0" />
+                <xs:element name="PaymentAmount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Surcharge" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Tip" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PreAuthAmount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Applied" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RefNum" type="xs:string" minOccurs="0" />
+                <xs:element name="AuthCode" type="xs:string" minOccurs="0" />
+                <xs:element name="AcqRefData" type="xs:string" minOccurs="0" />
+                <xs:element name="BatchCleared" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Duplicate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                <xs:element name="TerminalsOpenID" type="xs:long" minOccurs="0" />
+                <xs:element name="AlreadyPrinted" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                <xs:element name="PaymentTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="PaymentFlag" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenBigInt1" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PaymentType">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PaymentTypeID" type="xs:int" minOccurs="0" />
+                <xs:element name="PaymentTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="PaymentFlag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Functions">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FunctionID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionGroupID" type="xs:int" minOccurs="0" />
+                <xs:element name="FunctionName" type="xs:string" minOccurs="0" />
+                <xs:element name="FunctionFlag" type="xs:string" minOccurs="0" />
+                <xs:element name="TaxID" type="xs:int" minOccurs="0" />
+                <xs:element name="DrinkRoutingID" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <OpenOrders>
+    <OpenOrderID>5512</OpenOrderID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>23</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <OrderNumber>31</OrderNumber>
+    <ShiftID>1</ShiftID>
+    <MenuID>1</MenuID>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <CustomerNumber>1</CustomerNumber>
+    <CourseNumber>2</CourseNumber>
+    <sin>2</sin>
+    <sii>2</sii>
+    <si2>0</si2>
+    <Quantity>1</Quantity>
+    <ItemID>1</ItemID>
+    <ItemName>Ckn Wings</ItemName>
+    <TerminalName>Ckn Wings</TerminalName>
+    <ChitName>Ckn Wings</ChitName>
+    <ItemPrice>3.00</ItemPrice>
+    <Price>3.00</Price>
+    <TaxPrice>0.15000000</TaxPrice>
+    <SinTax>0.0000</SinTax>
+    <TaxID>1</TaxID>
+    <ForceFreeID>0</ForceFreeID>
+    <ForceFreeAuth>0</ForceFreeAuth>
+    <ForceFreeCode>0</ForceFreeCode>
+    <FunctionID>2</FunctionID>
+    <CategoryID>1</CategoryID>
+    <FoodID>1</FoodID>
+    <DrinkCategoryID>0</DrinkCategoryID>
+    <DrinkID>0</DrinkID>
+    <ItemStatus>4</ItemStatus>
+    <RoutingID>1</RoutingID>
+    <PrintPriorityID>5</PrintPriorityID>
+    <Repeat>false</Repeat>
+    <TerminalID>4</TerminalID>
+    <dbUP>1</dbUP>
+    <OpenDecimal1>1</OpenDecimal1>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionFlag>O</FunctionFlag>
+  </OpenOrders>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>1</TableOverviewID>
+    <TableNumber>922</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>192</xLoc>
+    <yLoc>370</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>2</TableOverviewID>
+    <TableNumber>921</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>193</xLoc>
+    <yLoc>323</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>3</TableOverviewID>
+    <TableNumber>920</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>192</xLoc>
+    <yLoc>275</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>4</TableOverviewID>
+    <TableNumber>919</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>191</xLoc>
+    <yLoc>226</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>5</TableOverviewID>
+    <TableNumber>918</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>190</xLoc>
+    <yLoc>181</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>6</TableOverviewID>
+    <TableNumber>916</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>191</xLoc>
+    <yLoc>87</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>7</TableOverviewID>
+    <TableNumber>915</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>190</xLoc>
+    <yLoc>43</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>8</TableOverviewID>
+    <TableNumber>914</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>191</xLoc>
+    <yLoc>-1</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>9</TableOverviewID>
+    <TableNumber>913</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>142</xLoc>
+    <yLoc>-2</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>10</TableOverviewID>
+    <TableNumber>912</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>94</xLoc>
+    <yLoc>-2</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>11</TableOverviewID>
+    <TableNumber>911</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>47</xLoc>
+    <yLoc>-4</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>12</TableOverviewID>
+    <TableNumber>910</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>145</xLoc>
+    <yLoc>371</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>13</TableOverviewID>
+    <TableNumber>909</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>144</xLoc>
+    <yLoc>323</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>14</TableOverviewID>
+    <TableNumber>908</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>144</xLoc>
+    <yLoc>275</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>15</TableOverviewID>
+    <TableNumber>907</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>144</xLoc>
+    <yLoc>227</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>16</TableOverviewID>
+    <TableNumber>906</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>143</xLoc>
+    <yLoc>181</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>17</TableOverviewID>
+    <TableNumber>905</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>143</xLoc>
+    <yLoc>133</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>18</TableOverviewID>
+    <TableNumber>904</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>142</xLoc>
+    <yLoc>87</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>19</TableOverviewID>
+    <TableNumber>902</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>93</xLoc>
+    <yLoc>42</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>20</TableOverviewID>
+    <TableNumber>901</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>46</xLoc>
+    <yLoc>41</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>21</TableOverviewID>
+    <TableNumber>22</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>347</xLoc>
+    <yLoc>130</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>22</TableOverviewID>
+    <TableNumber>16</TableNumber>
+    <MaxExpNumByTable>3488</MaxExpNumByTable>
+    <SatTime>2009-02-24T04:00:06.407-05:00</SatTime>
+    <EmployeeID>4001</EmployeeID>
+    <DailyCode>80</DailyCode>
+    <TableStatusID>10</TableStatusID>
+    <LastStatusTime>2009-04-14T21:19:48.64-04:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>288</xLoc>
+    <yLoc>79</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+    <OpenBigInt1>3488</OpenBigInt1>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>23</TableOverviewID>
+    <TableNumber>14</TableNumber>
+    <MaxExpNumByTable>3500</MaxExpNumByTable>
+    <SatTime>2009-04-14T11:09:53.673-04:00</SatTime>
+    <EmployeeID>4001</EmployeeID>
+    <DailyCode>80</DailyCode>
+    <TableStatusID>10</TableStatusID>
+    <LastStatusTime>2009-04-14T21:21:43.173-04:00</LastStatusTime>
+    <ItemsOnHold>1</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>6</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>345</xLoc>
+    <yLoc>33</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+    <OpenBigInt1>3500</OpenBigInt1>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>24</TableOverviewID>
+    <TableNumber>12</TableNumber>
+    <MaxExpNumByTable>1</MaxExpNumByTable>
+    <SatTime>2004-04-01T14:04:23.553-04:00</SatTime>
+    <EmployeeID>2000</EmployeeID>
+    <DailyCode>1</DailyCode>
+    <TableStatusID>1</TableStatusID>
+    <LastStatusTime>2004-04-01T14:12:21.37-04:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>198</xLoc>
+    <yLoc>33</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+    <OpenBigInt1>1</OpenBigInt1>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>25</TableOverviewID>
+    <TableNumber>11</TableNumber>
+    <MaxExpNumByTable>1</MaxExpNumByTable>
+    <SatTime>2004-04-01T14:04:23.553-04:00</SatTime>
+    <EmployeeID>2000</EmployeeID>
+    <DailyCode>1</DailyCode>
+    <TableStatusID>1</TableStatusID>
+    <LastStatusTime>2004-04-01T14:12:21.37-04:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>134</xLoc>
+    <yLoc>32</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+    <OpenBigInt1>1</OpenBigInt1>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>27</TableOverviewID>
+    <TableNumber>32</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>347</xLoc>
+    <yLoc>182</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>28</TableOverviewID>
+    <TableNumber>13</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>false</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>285</xLoc>
+    <yLoc>32</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>29</TableOverviewID>
+    <TableNumber>17</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>false</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>347</xLoc>
+    <yLoc>80</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>30</TableOverviewID>
+    <TableNumber>917</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>190</xLoc>
+    <yLoc>132</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>31</TableOverviewID>
+    <TableNumber>903</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>2</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>143</xLoc>
+    <yLoc>41</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>32</TableOverviewID>
+    <TableNumber>15</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>136</xLoc>
+    <yLoc>82</yLoc>
+    <myWidth>105</myWidth>
+    <myHeight>30</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>33</TableOverviewID>
+    <TableNumber>31</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>290</xLoc>
+    <yLoc>182</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>34</TableOverviewID>
+    <TableNumber>30</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>200</xLoc>
+    <yLoc>182</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>35</TableOverviewID>
+    <TableNumber>21</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>287</xLoc>
+    <yLoc>127</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <AllTables>
+    <LocationID>000002</LocationID>
+    <TableOverviewID>36</TableOverviewID>
+    <TableNumber>20</TableNumber>
+    <SatTime>2009-01-01T00:00:00-05:00</SatTime>
+    <TableStatusID>2</TableStatusID>
+    <LastStatusTime>2009-01-01T00:00:00-05:00</LastStatusTime>
+    <ItemsOnHold>0</ItemsOnHold>
+    <FloorPlanID>1</FloorPlanID>
+    <TableSectionID>1</TableSectionID>
+    <Seats>4</Seats>
+    <Available>true</Available>
+    <isTable>true</isTable>
+    <isRound>false</isRound>
+    <xLoc>200</xLoc>
+    <yLoc>127</yLoc>
+    <myWidth>40</myWidth>
+    <myHeight>40</myHeight>
+    <Active>true</Active>
+  </AllTables>
+  <OpenBusiness>
+    <DailyCode>52</DailyCode>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <StartTime>2008-12-05T10:25:24.39-05:00</StartTime>
+    <EmployeeOpened>0</EmployeeOpened>
+    <EmployeeClosed>1234</EmployeeClosed>
+    <PrimaryMenu>1</PrimaryMenu>
+    <SecondaryMenu>2</SecondaryMenu>
+    <ShiftID>2</ShiftID>
+    <InvCounted>0</InvCounted>
+  </OpenBusiness>
+  <OpenBusiness>
+    <DailyCode>80</DailyCode>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <StartTime>2009-02-24T03:55:18.407-05:00</StartTime>
+    <EmployeeOpened>0</EmployeeOpened>
+    <PrimaryMenu>1</PrimaryMenu>
+    <SecondaryMenu>2</SecondaryMenu>
+    <ShiftID>2</ShiftID>
+    <InvCounted>0</InvCounted>
+  </OpenBusiness>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>339</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>5</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2005-11-11T00:00:00-05:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>1</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>7.70</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <AuthCode xml:space="preserve">      </AuthCode>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>1</TerminalID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <dbUP>0</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>Cash</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>5243</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>23</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2007-04-18T15:51:04.047-04:00</PaymentDate>
+    <EmployeeID>1234</EmployeeID>
+    <CheckNumber>0</CheckNumber>
+    <PaymentTypeID>-3</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>-5.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>2</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>Eric</Description>
+    <dbUP>1</dbUP>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <PaymentTypeName>cash-out</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001077</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T10:45:43.633-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001079</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:02:43.557-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001078</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:01:42.337-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001082</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:05:07.103-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001081</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:03:52.01-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001080</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:03:41.12-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001083</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:06:40.527-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001084</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:09:19.133-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001085</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:11:44.697-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001086</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:12:39.447-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001087</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>25</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-03-22T11:15:01.947-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001179</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001006</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-04T20:22:06.973-04:00</PaymentDate>
+    <EmployeeID>7003</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001180</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001006</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-04T20:22:22.6-04:00</PaymentDate>
+    <EmployeeID>7003</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001178</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001006</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-04T20:20:14.85-04:00</PaymentDate>
+    <EmployeeID>7003</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001177</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001006</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-04T20:19:52.067-04:00</PaymentDate>
+    <EmployeeID>7003</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001181</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001006</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-04T20:25:50.257-04:00</PaymentDate>
+    <EmployeeID>7003</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001201</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T12:20:44.163-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001202</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T12:21:35.74-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001200</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T12:19:50.96-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001199</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T12:19:18.147-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001203</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T13:00:13.77-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001205</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T14:36:00.007-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001204</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T14:35:48.787-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001206</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-05T14:50:41.693-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001290</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T10:25:33.22-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001289</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T10:24:33.89-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001287</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T10:18:40.22-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001288</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T10:19:40.687-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001294</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T12:14:03.547-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001293</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T12:07:30.78-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001292</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T12:05:50.093-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001291</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T12:01:27.36-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001295</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-10T12:19:42.47-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001308</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-11T17:37:01.593-04:00</PaymentDate>
+    <EmployeeID>1234</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001309</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-11T17:43:01.703-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001322</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-18T11:48:31.047-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001323</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-18T11:55:45.39-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001324</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-18T12:14:06.86-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001326</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-18T18:19:59.797-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001325</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-18T18:17:34.593-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001328</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-08-18T18:51:14.983-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001385</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:49:51.943-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001389</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:58:35.49-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001391</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:59:23.207-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001390</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:58:55.067-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001388</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:56:50.457-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001386</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:50:15.193-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001387</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-10T08:51:38.91-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001399</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:08:29.787-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001395</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:05:35.3-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001394</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:02:56.427-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001392</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:00:28.067-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001396</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:06:15.723-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001393</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:01:31.443-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001397</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:07:23.6-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001401</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:13:30.27-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001398</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:08:05.897-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001400</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:13:21.8-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001402</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-12T17:14:09.147-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001416</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-30T09:25:51.377-04:00</PaymentDate>
+    <EmployeeID>1234</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001418</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-30T09:26:33.547-04:00</PaymentDate>
+    <EmployeeID>1234</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001415</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-30T09:18:37.78-04:00</PaymentDate>
+    <EmployeeID>1234</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>20000001417</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-09-30T09:26:16.267-04:00</PaymentDate>
+    <EmployeeID>1234</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>3</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentsAndCredits>
+    <PaymentsAndCreditsID>5536</PaymentsAndCreditsID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <DailyCode>20000001005</DailyCode>
+    <ExperienceNumber>0</ExperienceNumber>
+    <PaymentDate>2008-10-08T17:00:31.563-04:00</PaymentDate>
+    <EmployeeID>4001</EmployeeID>
+    <CheckNumber>1</CheckNumber>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <SwipeType>0</SwipeType>
+    <PaymentAmount>0.00</PaymentAmount>
+    <Surcharge>0.00</Surcharge>
+    <Tip>0.00</Tip>
+    <Applied>true</Applied>
+    <BatchCleared>false</BatchCleared>
+    <Duplicate>false</Duplicate>
+    <TerminalID>1</TerminalID>
+    <TerminalsOpenID>0</TerminalsOpenID>
+    <AlreadyPrinted>false</AlreadyPrinted>
+    <Description>no-sale</Description>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentsAndCredits>
+  <PaymentType>
+    <PaymentTypeID>-99</PaymentTypeID>
+    <PaymentTypeName>Other Credit</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>-98</PaymentTypeID>
+    <PaymentTypeName>Other Credit</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>-97</PaymentTypeID>
+    <PaymentTypeName>Issue Gift</PaymentTypeName>
+    <PaymentFlag>Issue</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>-7</PaymentTypeID>
+    <PaymentTypeName>Comp'd</PaymentTypeName>
+    <PaymentFlag>Comp</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>-3</PaymentTypeID>
+    <PaymentTypeName>cash-out</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>-2</PaymentTypeID>
+    <PaymentTypeName>no-sale</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>0</PaymentTypeID>
+    <PaymentTypeName>Manual cc</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>1</PaymentTypeID>
+    <PaymentTypeName>Cash</PaymentTypeName>
+    <PaymentFlag>Cash</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>2</PaymentTypeID>
+    <PaymentTypeName>AMEX</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>3</PaymentTypeID>
+    <PaymentTypeName>VISA</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>4</PaymentTypeID>
+    <PaymentTypeName>M/C</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>5</PaymentTypeID>
+    <PaymentTypeName>DCVR</PaymentTypeName>
+    <PaymentFlag>cc</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>6</PaymentTypeID>
+    <PaymentTypeName>MPS Gift</PaymentTypeName>
+    <PaymentFlag>Gift</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>7</PaymentTypeID>
+    <PaymentTypeName>Open</PaymentTypeName>
+    <PaymentFlag>Open</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>8</PaymentTypeID>
+    <PaymentTypeName>Open</PaymentTypeName>
+    <PaymentFlag>Open</PaymentFlag>
+  </PaymentType>
+  <PaymentType>
+    <PaymentTypeID>9</PaymentTypeID>
+    <PaymentTypeName>Outside Credit</PaymentTypeName>
+    <PaymentFlag>outside</PaymentFlag>
+  </PaymentType>
+  <Functions>
+    <FunctionID>0</FunctionID>
+    <FunctionGroupID>0</FunctionGroupID>
+    <FunctionName>Choose Function</FunctionName>
+    <FunctionFlag>N</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>1</FunctionID>
+    <FunctionGroupID>1</FunctionGroupID>
+    <FunctionName>Main Food Item</FunctionName>
+    <FunctionFlag>F</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>2</FunctionID>
+    <FunctionGroupID>10</FunctionGroupID>
+    <FunctionName>Food Item - Other</FunctionName>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>3</FunctionID>
+    <FunctionGroupID>9</FunctionGroupID>
+    <FunctionName>Modifier</FunctionName>
+    <FunctionFlag>M</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>4</FunctionID>
+    <FunctionGroupID>2</FunctionGroupID>
+    <FunctionName>Beer</FunctionName>
+    <FunctionFlag>D</FunctionFlag>
+    <TaxID>3</TaxID>
+    <DrinkRoutingID>3</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>5</FunctionID>
+    <FunctionGroupID>3</FunctionGroupID>
+    <FunctionName>Wine</FunctionName>
+    <FunctionFlag>D</FunctionFlag>
+    <TaxID>4</TaxID>
+    <DrinkRoutingID>3</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>6</FunctionID>
+    <FunctionGroupID>4</FunctionGroupID>
+    <FunctionName>Liquor</FunctionName>
+    <FunctionFlag>D</FunctionFlag>
+    <TaxID>2</TaxID>
+    <DrinkRoutingID>3</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>7</FunctionID>
+    <FunctionGroupID>5</FunctionGroupID>
+    <FunctionName>Non-Alcoholic</FunctionName>
+    <FunctionFlag>D</FunctionFlag>
+    <TaxID>2</TaxID>
+    <DrinkRoutingID>3</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>8</FunctionID>
+    <FunctionGroupID>6</FunctionGroupID>
+    <FunctionName>Merchandise</FunctionName>
+    <FunctionFlag>N</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>9</FunctionID>
+    <FunctionGroupID>7</FunctionGroupID>
+    <FunctionName>Promotion</FunctionName>
+    <FunctionFlag>N</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>10</FunctionID>
+    <FunctionGroupID>8</FunctionGroupID>
+    <FunctionName>Special Message</FunctionName>
+    <FunctionFlag>N</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>11</FunctionID>
+    <FunctionGroupID>8</FunctionGroupID>
+    <FunctionName>Open Food</FunctionName>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>1</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>12</FunctionID>
+    <FunctionGroupID>4</FunctionGroupID>
+    <FunctionName>Open Drink</FunctionName>
+    <FunctionFlag>D</FunctionFlag>
+    <TaxID>2</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>26</FunctionID>
+    <FunctionGroupID>99</FunctionGroupID>
+    <FunctionName>General Menu</FunctionName>
+    <FunctionFlag>G</FunctionFlag>
+    <TaxID>0</TaxID>
+    <DrinkRoutingID>2</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>27</FunctionID>
+    <FunctionGroupID>5</FunctionGroupID>
+    <FunctionName>Drinks</FunctionName>
+    <FunctionFlag>O</FunctionFlag>
+    <TaxID>2</TaxID>
+    <DrinkRoutingID>3</DrinkRoutingID>
+  </Functions>
+  <Functions>
+    <FunctionID>43</FunctionID>
+    <FunctionGroupID>11</FunctionGroupID>
+    <FunctionName>Drink Prep</FunctionName>
+    <FunctionFlag>D</FunctionFlag>
+    <TaxID>2</TaxID>
+    <DrinkRoutingID>3</DrinkRoutingID>
+  </Functions>
+</OrderData>

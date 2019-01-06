@@ -1,0 +1,616 @@
+<?xml version="1.0" standalone="yes"?>
+<Employee>
+  <xs:schema id="Employee" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Employee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ClockedIn">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="LoggedInEmployees">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="LoginTrackingID" type="xs:long" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="JobCode" type="xs:int" minOccurs="0" />
+                <xs:element name="LogInTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="LogOutTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TerminalsGroupID" type="xs:int" minOccurs="0" />
+                <xs:element name="RegPayRate" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OTPayRate" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TipableSales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="DeclaredTips" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ChargedSales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ChargedTips" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OverrideLogin" type="xs:int" minOccurs="0" />
+                <xs:element name="OverrideLogout" type="xs:int" minOccurs="0" />
+                <xs:element name="OverrideRegPay" type="xs:int" minOccurs="0" />
+                <xs:element name="OverrideOTPay" type="xs:int" minOccurs="0" />
+                <xs:element name="OverrideDeclaredTips" type="xs:int" minOccurs="0" />
+                <xs:element name="Terminal" type="xs:int" minOccurs="0" />
+                <xs:element name="dbUP" type="xs:int" minOccurs="0" />
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+                <xs:element name="NickName" type="xs:string" minOccurs="0" />
+                <xs:element name="ClockInReq" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClockOutSales">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FunctionGroupSales" type="xs:decimal" minOccurs="0" />
+                <xs:element name="FunctionName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClockOutTaxes">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClockOutPayments">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClockOutAudit">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SalesDetail">
+            <xs:complexType>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="AllEmployees">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="EmployeeID" type="xs:int" minOccurs="0" />
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="EmployeeNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                <xs:element name="NickName" type="xs:string" minOccurs="0" />
+                <xs:element name="Passcode" type="xs:string" minOccurs="0" />
+                <xs:element name="SwipeCode" type="xs:string" minOccurs="0" />
+                <xs:element name="Training" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Terminated" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ClockInReq" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ReportMgmtAll" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ReportMgmtLimited" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OperationMgmtAll" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OperationMgmtLimited" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SystemMgmtAll" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SystemMgmtLimited" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EmployeeMgmtAll" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EmployeeMgmtLimited" type="xs:boolean" minOccurs="0" />
+                <xs:element name="JobCodeID1" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="JobCodeID2" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate2" type="xs:decimal" minOccurs="0" />
+                <xs:element name="JobCodeID3" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate3" type="xs:decimal" minOccurs="0" />
+                <xs:element name="JobCodeID4" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate4" type="xs:decimal" minOccurs="0" />
+                <xs:element name="JobCodeID5" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate5" type="xs:decimal" minOccurs="0" />
+                <xs:element name="JobCodeID6" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate6" type="xs:decimal" minOccurs="0" />
+                <xs:element name="JobCodeID7" type="xs:int" minOccurs="0" />
+                <xs:element name="JobRate7" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Lefty" type="xs:boolean" minOccurs="0" />
+                <xs:element name="JobName1" type="xs:string" minOccurs="0" />
+                <xs:element name="JobName2" type="xs:string" minOccurs="0" />
+                <xs:element name="JobName3" type="xs:string" minOccurs="0" />
+                <xs:element name="JobName4" type="xs:string" minOccurs="0" />
+                <xs:element name="JobName5" type="xs:string" minOccurs="0" />
+                <xs:element name="JobName6" type="xs:string" minOccurs="0" />
+                <xs:element name="JobName7" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="JobCodeInfo">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CompanyID" type="xs:string" minOccurs="0" />
+                <xs:element name="LocationID" type="xs:string" minOccurs="0" />
+                <xs:element name="JobCodeID" type="xs:int" minOccurs="0" />
+                <xs:element name="JobCodeName" type="xs:string" minOccurs="0" />
+                <xs:element name="Manager" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Cashier" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Bartender" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Server" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Hostess" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PasswordReq" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ClockInReq" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ReportTipsReq" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ShareTipsReq" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <LoggedInEmployees>
+    <LoginTrackingID>5077</LoginTrackingID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeID>4001</EmployeeID>
+    <JobCode>3</JobCode>
+    <LogInTime>2009-04-14T10:24:00.203-04:00</LogInTime>
+    <TerminalsGroupID>1</TerminalsGroupID>
+    <RegPayRate>7.50</RegPayRate>
+    <OTPayRate>11.25</OTPayRate>
+    <Terminal>1</Terminal>
+    <dbUP>1</dbUP>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <MiddleName />
+    <NickName>Beth</NickName>
+    <ClockInReq>true</ClockInReq>
+  </LoggedInEmployees>
+  <LoggedInEmployees>
+    <LoginTrackingID>5086</LoginTrackingID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeID>7001</EmployeeID>
+    <JobCode>25</JobCode>
+    <LogInTime>2009-04-16T11:39:00.983-04:00</LogInTime>
+    <TerminalsGroupID>1</TerminalsGroupID>
+    <RegPayRate>7.00</RegPayRate>
+    <OTPayRate>10.50</OTPayRate>
+    <Terminal>1</Terminal>
+    <dbUP>1</dbUP>
+    <LastName>Cook</LastName>
+    <FirstName>Carter</FirstName>
+    <MiddleName />
+    <NickName>Carter</NickName>
+    <ClockInReq>true</ClockInReq>
+  </LoggedInEmployees>
+  <LoggedInEmployees>
+    <LoginTrackingID>5084</LoginTrackingID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeID>7003</EmployeeID>
+    <JobCode>24</JobCode>
+    <LogInTime>2009-04-16T11:35:00-04:00</LogInTime>
+    <TerminalsGroupID>1</TerminalsGroupID>
+    <RegPayRate>5.50</RegPayRate>
+    <OTPayRate>8.25</OTPayRate>
+    <Terminal>1</Terminal>
+    <dbUP>1</dbUP>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <MiddleName />
+    <NickName>Quinn</NickName>
+    <ClockInReq>true</ClockInReq>
+  </LoggedInEmployees>
+  <LoggedInEmployees>
+    <LoginTrackingID>20000001009</LoginTrackingID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeID>2000</EmployeeID>
+    <JobCode>2</JobCode>
+    <LogInTime>2008-08-09T13:52:00.76-04:00</LogInTime>
+    <TerminalsGroupID>1</TerminalsGroupID>
+    <RegPayRate>5.00</RegPayRate>
+    <OTPayRate>7.50</OTPayRate>
+    <Terminal>4</Terminal>
+    <dbUP>1</dbUP>
+    <LastName>Server</LastName>
+    <FirstName>Sam</FirstName>
+    <MiddleName />
+    <NickName>Sam</NickName>
+    <ClockInReq>true</ClockInReq>
+  </LoggedInEmployees>
+  <AllEmployees>
+    <EmployeeID>4001</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>4001</EmployeeNumber>
+    <LastName>Bartender</LastName>
+    <FirstName>Beth</FirstName>
+    <NickName>Beth</NickName>
+    <Passcode>1111</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>true</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>true</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>true</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>3</JobCodeID1>
+    <JobRate1>7.50</JobRate1>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Bartender</JobName1>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>4002</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>4002</EmployeeNumber>
+    <LastName>Bartender</LastName>
+    <FirstName>Benjamin</FirstName>
+    <NickName>Benjamin</NickName>
+    <Passcode>1111</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>false</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>3</JobCodeID1>
+    <JobRate1>7.00</JobRate1>
+    <JobCodeID2>2</JobCodeID2>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>true</Lefty>
+    <JobName1>Bartender</JobName1>
+    <JobName2>Server</JobName2>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>7001</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>7001</EmployeeNumber>
+    <LastName>Cook</LastName>
+    <FirstName>Carter</FirstName>
+    <NickName>Carter</NickName>
+    <Passcode>1111</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>false</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>8</JobCodeID1>
+    <JobRate1>9.00</JobRate1>
+    <JobCodeID2>25</JobCodeID2>
+    <JobRate2>7.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Kitchen Cook</JobName1>
+    <JobName2>Prep Cook</JobName2>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>7007</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>1010</EmployeeNumber>
+    <LastName>Cook</LastName>
+    <FirstName>Chris</FirstName>
+    <NickName>Chris</NickName>
+    <Passcode>1111</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>false</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>8</JobCodeID1>
+    <JobRate1>6.00</JobRate1>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Kitchen Cook</JobName1>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>1234</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>1234</EmployeeNumber>
+    <LastName>Manager</LastName>
+    <FirstName>Mark</FirstName>
+    <NickName>Mark</NickName>
+    <Passcode>1111</Passcode>
+    <SwipeCode>H/rvf/7Aoals8zajto/V</SwipeCode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>false</ClockInReq>
+    <ReportMgmtAll>true</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>true</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>true</SystemMgmtAll>
+    <SystemMgmtLimited>false</SystemMgmtLimited>
+    <EmployeeMgmtAll>true</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>1</JobCodeID1>
+    <JobRate1>18.00</JobRate1>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Manager</JobName1>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>6986</EmployeeID>
+    <CompanyID>000000</CompanyID>
+    <LocationID>000000</LocationID>
+    <EmployeeNumber>6986</EmployeeNumber>
+    <LastName>Petruzzelli</LastName>
+    <FirstName>Eric</FirstName>
+    <NickName>Eric</NickName>
+    <Passcode>4044</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>false</ClockInReq>
+    <ReportMgmtAll>true</ReportMgmtAll>
+    <ReportMgmtLimited>true</ReportMgmtLimited>
+    <OperationMgmtAll>true</OperationMgmtAll>
+    <OperationMgmtLimited>true</OperationMgmtLimited>
+    <SystemMgmtAll>true</SystemMgmtAll>
+    <SystemMgmtLimited>true</SystemMgmtLimited>
+    <EmployeeMgmtAll>true</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>true</EmployeeMgmtLimited>
+    <JobCodeID1>21</JobCodeID1>
+    <JobRate1>0.00</JobRate1>
+    <JobCodeID2>2</JobCodeID2>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Administrator</JobName1>
+    <JobName2>Server</JobName2>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>7003</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>2002</EmployeeNumber>
+    <LastName>QuickServer</LastName>
+    <FirstName>Quinn</FirstName>
+    <NickName>Quinn</NickName>
+    <Passcode>1111</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>true</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>24</JobCodeID1>
+    <JobRate1>5.50</JobRate1>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Cashier</JobName1>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>2000</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>2000</EmployeeNumber>
+    <LastName>Server</LastName>
+    <FirstName>Sam</FirstName>
+    <NickName>Sam</NickName>
+    <Passcode>1111</Passcode>
+    <Training>false</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>true</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>2</JobCodeID1>
+    <JobRate1>5.00</JobRate1>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Server</JobName1>
+  </AllEmployees>
+  <AllEmployees>
+    <EmployeeID>2001</EmployeeID>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <EmployeeNumber>2001</EmployeeNumber>
+    <LastName>Trainee</LastName>
+    <FirstName>Tim</FirstName>
+    <NickName>Tim</NickName>
+    <Passcode>1111</Passcode>
+    <Training>true</Training>
+    <Terminated>false</Terminated>
+    <ClockInReq>true</ClockInReq>
+    <ReportMgmtAll>false</ReportMgmtAll>
+    <ReportMgmtLimited>false</ReportMgmtLimited>
+    <OperationMgmtAll>false</OperationMgmtAll>
+    <OperationMgmtLimited>false</OperationMgmtLimited>
+    <SystemMgmtAll>false</SystemMgmtAll>
+    <SystemMgmtLimited>false</SystemMgmtLimited>
+    <EmployeeMgmtAll>false</EmployeeMgmtAll>
+    <EmployeeMgmtLimited>false</EmployeeMgmtLimited>
+    <JobCodeID1>2</JobCodeID1>
+    <JobRate1>4.00</JobRate1>
+    <JobRate2>0.00</JobRate2>
+    <JobRate3>0.00</JobRate3>
+    <JobRate4>0.00</JobRate4>
+    <JobRate5>0.00</JobRate5>
+    <JobRate6>0.00</JobRate6>
+    <JobRate7>0.00</JobRate7>
+    <Lefty>false</Lefty>
+    <JobName1>Server</JobName1>
+  </AllEmployees>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>-99</JobCodeID>
+    <JobCodeName>Overtime</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>false</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>false</ClockInReq>
+    <ReportTipsReq>false</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>1</JobCodeID>
+    <JobCodeName>Manager</JobCodeName>
+    <Manager>true</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>false</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>true</PasswordReq>
+    <ClockInReq>false</ClockInReq>
+    <ReportTipsReq>false</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>2</JobCodeID>
+    <JobCodeName>Server</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>false</Bartender>
+    <Server>true</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>false</ClockInReq>
+    <ReportTipsReq>true</ReportTipsReq>
+    <ShareTipsReq>true</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>8</JobCodeID>
+    <JobCodeName>Kitchen Cook</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>false</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>true</ClockInReq>
+    <ReportTipsReq>false</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>9</JobCodeID>
+    <JobCodeName>Dishwasher</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>false</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>true</ClockInReq>
+    <ReportTipsReq>false</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>24</JobCodeID>
+    <JobCodeName>Cashier</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>true</Cashier>
+    <Bartender>false</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>true</ClockInReq>
+    <ReportTipsReq>false</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>3</JobCodeID>
+    <JobCodeName>Bartender</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>true</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>true</ClockInReq>
+    <ReportTipsReq>true</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+  <JobCodeInfo>
+    <CompanyID>001111</CompanyID>
+    <LocationID>000002</LocationID>
+    <JobCodeID>25</JobCodeID>
+    <JobCodeName>Prep Cook</JobCodeName>
+    <Manager>false</Manager>
+    <Cashier>false</Cashier>
+    <Bartender>false</Bartender>
+    <Server>false</Server>
+    <Hostess>false</Hostess>
+    <PasswordReq>false</PasswordReq>
+    <ClockInReq>true</ClockInReq>
+    <ReportTipsReq>false</ReportTipsReq>
+    <ShareTipsReq>false</ShareTipsReq>
+  </JobCodeInfo>
+</Employee>

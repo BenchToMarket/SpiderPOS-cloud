@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TStream xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Transaction>
+    <MerchantID>494901</MerchantID>
+    <OperatorID>eGlobal</OperatorID>
+    <TranType>Credit</TranType>
+    <TranCode>PreAuth</TranCode>
+    <InvoiceNo>229-1</InvoiceNo>
+    <RefNo>229-1</RefNo>
+    <Account>
+      <Track2>371382007704003=0703040652786</Track2>
+      <Name>E              PETRUZZELLI</Name>
+    </Account>
+    <Amount>
+      <Purchase>4.24</Purchase>
+      <Gratuity>0</Gratuity>
+      <Authorize>5.09</Authorize>
+    </Amount>
+  </Transaction>
+</TStream>

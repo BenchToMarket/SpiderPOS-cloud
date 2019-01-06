@@ -1,0 +1,581 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D079F9E-4B79-4507-ADF6-DFC6C80FB29C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Spider POS</AssemblyName>
+    <AssemblyOriginatorKeyFile>SpiderPOS_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>SpiderPOS</RootNamespace>
+    <StartupObject>SpiderPOS.Login</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ManifestCertificateThumbprint>AF6F5D96025CA23BE0610484BC862D891BF8F3E1</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SpiderPOS_1_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>true</SignManifests>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <PublishUrl>\\Phoenix\eGlobalPartners\NewClient\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>149</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Spider POS.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Spider POS.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.DSICLIENTXLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="SIM, Version=1.0.0.26, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\DataSet_Builder\DataSet_Builder.vbproj">
+      <Name>DataSet_Builder</Name>
+      <Project>{D2F8A0CB-3E3D-4DB4-9624-DC3A4C54AE85}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="SpiderPOS_TemporaryKey.pfx" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BatchClose_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CashClose_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CashDrawer_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CashOut_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckAdjustmentOverride_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckTotal_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClockInUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClockOut_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CloseCheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Comp_Ticket_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConnectionDown_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrinkPrep_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeLoggedInUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtraNo_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ForcePrice_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GenerateOrderTables.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenerateWorkingCollections.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KitchenButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LastOrder_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_Form.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager_Main_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager_OrderAdj_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager_Transfer+UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModifyOrder_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPadSmall_Black.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpeningScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderButtonRaised.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderCloseGridColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGridColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGridColumnPrice.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrderGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrinterHelperMgr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrintHelper.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReadCredit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReturnCredit_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seating_ChooseTable.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seating_ColorCode.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seating_EnterTab.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seating_FloorPlan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seating_Table_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Seating_Table_UC2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectionBat_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectionDaily_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpecialFood.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplitChecks.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplitGridPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplitItemUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tables_Screen_Bar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabSelection_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tab_Screen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="term_OrderForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="term_Tahsc_main.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Training_UC.Designer.vb">
+      <DependentUpon>Training_UC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Training_UC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TStream.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="BatchClose_UC.resx">
+      <DependentUpon>BatchClose_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashClose_UC.resx">
+      <DependentUpon>CashClose_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashDrawer_UC.resx">
+      <DependentUpon>CashDrawer_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashOut_UC.resx">
+      <DependentUpon>CashOut_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckAdjustmentOverride_UC.resx">
+      <DependentUpon>CheckAdjustmentOverride_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckTotal_UC.resx">
+      <DependentUpon>CheckTotal_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClockInUserControl.resx">
+      <DependentUpon>ClockInUserControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClockOut_UC.resx">
+      <DependentUpon>ClockOut_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseCheck.resx">
+      <DependentUpon>CloseCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comp_Ticket_UC.resx">
+      <DependentUpon>Comp_Ticket_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionDown_UC.resx">
+      <DependentUpon>ConnectionDown_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrinkPrep_UC.resx">
+      <DependentUpon>DrinkPrep_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLoggedInUserControl.resx">
+      <DependentUpon>EmployeeLoggedInUserControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraNo_UC.resx">
+      <DependentUpon>ExtraNo_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForcePrice_UC.resx">
+      <DependentUpon>ForcePrice_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitchenButton.resx">
+      <DependentUpon>KitchenButton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastOrder_UC.resx">
+      <DependentUpon>LastOrder_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_Form.resx">
+      <DependentUpon>Manager_Form.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_Main_UC.resx">
+      <DependentUpon>Manager_Main_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_OrderAdj_UC.resx">
+      <DependentUpon>Manager_OrderAdj_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_Transfer+UC.resx">
+      <DependentUpon>Manager_Transfer+UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyOrder_UC.resx">
+      <DependentUpon>ModifyOrder_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberPadSmall_Black.resx">
+      <DependentUpon>NumberPadSmall_Black.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpeningScreen.resx">
+      <DependentUpon>OpeningScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderButton.resx">
+      <DependentUpon>OrderButton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderGrid.resx">
+      <DependentUpon>OrderGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderGridColumn.resx">
+      <DependentUpon>OrderGridColumn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderGridView.resx">
+      <DependentUpon>OrderGridView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnCredit_UC.resx">
+      <DependentUpon>ReturnCredit_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seating_ChooseTable.resx">
+      <DependentUpon>Seating_ChooseTable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seating_ColorCode.resx">
+      <DependentUpon>Seating_ColorCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seating_EnterTab.resx">
+      <DependentUpon>Seating_EnterTab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seating_FloorPlan.resx">
+      <DependentUpon>Seating_FloorPlan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seating_Table_UC.resx">
+      <DependentUpon>Seating_Table_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seating_Table_UC2.resx">
+      <DependentUpon>Seating_Table_UC2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionBat_UC.resx">
+      <DependentUpon>SelectionBat_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectionDaily_UC.resx">
+      <DependentUpon>SelectionDaily_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialFood.resx">
+      <DependentUpon>SpecialFood.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitChecks.resx">
+      <DependentUpon>SplitChecks.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitGridPanel.resx">
+      <DependentUpon>SplitGridPanel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitItemUserControl.resx">
+      <DependentUpon>SplitItemUserControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables_Screen_Bar.resx">
+      <DependentUpon>Tables_Screen_Bar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabSelection_UC.resx">
+      <DependentUpon>TabSelection_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tab_Screen.resx">
+      <DependentUpon>Tab_Screen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="term_OrderForm.resx">
+      <DependentUpon>term_OrderForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training_UC.resx">
+      <DependentUpon>Training_UC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AM-117-g12.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SpiderPOS_1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AM-117-g12.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
